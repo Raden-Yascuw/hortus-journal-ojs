@@ -170,18 +170,17 @@ function handleOJSLogin(e) {
 	var u = (document.getElementById('username').value || '').trim().toLowerCase();
 	var p = (document.getElementById('password').value || '').trim();
 	var accounts = {
-		'admin_jurnal': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
-		'admin_journal': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
+		'yanuar': { username: 'yanuar', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
+		'admin_jurnal': { username: 'yanuar', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
 		'editor_utama': { username: 'editor_utama', name: 'Lidya Amalia Rahmania, S.Kom, M.Kom', role: 'Pemimpin Redaksi' },
-		'editor_subjek': { username: 'editor_subjek', name: 'Nirmala Dwi Lestari', role: 'Section Editor' },
-		'layout_edit': { username: 'layout_edit', name: 'Nayla Syukurillah', role: 'Layout, Copyeditor & Production' },
-		'admin': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Site Administrator & Journal Manager' },
-		'reviewer_01': { username: 'reviewer_01', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
-		'reviewer_1': { username: 'reviewer_01', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
-		'reviewer_02': { username: 'reviewer_02', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
-		'reviewer_2': { username: 'reviewer_02', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
-		'author_test': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' },
-		'penulis_1': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' }
+		'nirmala': { username: 'nirmala', name: 'Nirmala Dwi Lestari', role: 'Section Editor' },
+		'editor_subjek': { username: 'nirmala', name: 'Nirmala Dwi Lestari', role: 'Section Editor' },
+		'nayla': { username: 'nayla', name: 'Nayla Syukurillah', role: 'Layout Editor, Copyeditor & Production' },
+		'layout_edit': { username: 'nayla', name: 'Nayla Syukurillah', role: 'Layout Editor, Copyeditor & Production' },
+		'admin': { username: 'admin', name: 'Administrator Sistem', role: 'Site Administrator & Journal Manager' },
+		'reviewer_01': { username: 'yanuar', name: 'Mohammad Yanuar Rizky', role: 'Reviewer A' },
+		'reviewer_02': { username: 'nirmala', name: 'Nirmala Dwi Lestari', role: 'Reviewer B' },
+		'author_test': { username: 'nayla', name: 'Nayla Syukurillah', role: 'Author' }
 	};
 	
 	// Check user accounts from dynamic registration

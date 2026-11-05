@@ -1654,7 +1654,7 @@ CREATE TABLE `notes` (
 
 LOCK TABLES `notes` WRITE;
 /*!40000 ALTER TABLE `notes` DISABLE KEYS */;
-INSERT INTO `notes` VALUES (1,1048586,1,5,'2026-10-14 10:25:00','2026-11-05 06:15:20','Hasil Initial Desk Screening & Uji Kemiripan Turnitin (Lolos 11%)','<p>Yth. Penulis Korespondensi (Nayla Syukurillah),<br/>Naskah Anda telah lolos <strong>Initial Desk Screening</strong> oleh Pemimpin Redaksi (Lidya Amalia Rahmania, S.Kom, M.Kom) dan Managing Editor (Mohammad Yanuar Rizky) dengan skor kemiripan Turnitin sebesar <strong>11%</strong> (di bawah ambang batas maksimal &le; 20%), mematuhi struktur IMRAD, dan berkas telah anonim (<em>Blind Manuscript</em>). Naskah dilanjutkan ke tahap <strong>Double-Blind Peer Review</strong> oleh Section Editor (Nirmala Dwi Lestari).</p>'),(2,1048586,2,6,'2026-10-27 09:35:00','2026-11-05 06:15:20','Keputusan Editorial Putaran 1: Revisions Required (Revisi Minor)','<p>Berdasarkan hasil evaluasi <em>Double-Blind Peer Review</em> dari dua Mitra Bebestari independen, naskah dinilai memiliki kebaruan ilmiah sangat baik namun memerlukan <strong>Revisi Minor (Revisions Required)</strong> terkait detail kalibrasi radiometrik UAV, uji ANOVA/Tukey HSD, dan analisis SHAP value pada bagian Pembahasan. Mohon unggah berkas revisi pada panel <em>Revisions</em>.</p>'),(3,1048586,2,8,'2026-10-29 15:45:00','2026-11-05 06:15:20','Re: Penyampaian Revisi Naskah & Tanggapan atas Masukan Reviewer','<p>Terima kasih kepada Editor dan Mitra Bebestari atas masukan yang sangat konstruktif. Kami telah merevisi naskah secara menyeluruh (menambahkan detail kalibrasi radiometrik DJI Mavic 3M, uji ANOVA/Tukey HSD &alpha; = 0,05, serta interpretasi SHAP value kanal Red Edge 42,6% dan VWC tanah 31,8%) dan mengunggah berkas <code>Naskah_Revisi_Author_Terverifikasi_Hortus_Journal.docx</code>.</p>'),(4,1048586,3,9,'2026-11-02 13:30:00','2026-11-05 06:15:20','Selesai Copyediting & Validasi Sitasi APA 7th Edition + DOI','<p>Layout Editor, Copyeditor &amp; Production Team (Nayla Syukurillah) telah menyelesaikan penyuntingan keterbacaan bahasa ilmiah, keseragaman satuan SI, serta validasi daftar rujukan APA 7th Edition. Berkas hasil penyuntingan akhir (<code>Naskah_Copyedited_Final_Terverifikasi_HJ.docx</code>) telah diunggah pada panel <em>Copyedited</em> dan telah disetujui Penulis.</p>'),(5,1048586,3,8,'2026-11-03 09:15:00','2026-11-05 06:15:20','Re: Persetujuan Hasil Copyediting oleh Penulis','<p>Kami telah memeriksa berkas hasil <em>Copyediting</em> dan menyetujui seluruh perbaikan redaksional untuk dilanjutkan ke tahap pembuatan Galley PDF (<em>Production</em>).</p>'),(6,1048586,4,9,'2026-11-04 11:15:00','2026-11-05 06:15:20','Unggah File Galley PDF Siap Publikasi (Galley_Final_HJ_Vol1_No1_2026.pdf)','<p>File tampilan akhir <strong>Galley PDF</strong> telah selesai ditata letak sesuai template resmi <em>Hortus Journal</em> (lengkap dengan header volume/nomor, halaman 1–12, lisensi CC BY 4.0, dan identitas DOI) serta diunggah pada panel <em>Galleys</em>. Naskah telah dijadwalkan terbit pada <strong>Vol. 1 No. 1 (2026)</strong>.</p>');
+INSERT INTO `notes` VALUES (1,1048586,1,5,'2026-10-14 10:25:00','2026-11-05 06:15:20','Hasil Initial Desk Screening & Uji Kemiripan Turnitin (Lolos 11%)','<p>Yth. Penulis Korespondensi (Nayla Syukurillah),<br/>Naskah Anda telah lolos <strong>Initial Desk Screening</strong> oleh Pemimpin Redaksi (Lidya Amalia Rahmania, S.Kom, M.Kom) dan Managing Editor (Mohammad Yanuar Rizky) dengan skor kemiripan Turnitin sebesar <strong>11%</strong> (di bawah ambang batas maksimal &le; 20%), mematuhi struktur IMRAD, dan berkas telah anonim (<em>Blind Manuscript</em>). Naskah dilanjutkan ke tahap <strong>Double-Blind Peer Review</strong> oleh Section Editor (Nirmala Dwi Lestari).</p>'),(2,1048586,2,6,'2026-10-27 09:35:00','2026-11-05 06:15:20','Keputusan Editorial Putaran 1: Revisions Required (Revisi Minor)','<p>Berdasarkan hasil evaluasi <em>Double-Blind Peer Review</em> dari dua Mitra Bebestari independen, naskah dinilai memiliki kebaruan ilmiah sangat baik namun memerlukan <strong>Revisi Minor (Revisions Required)</strong> terkait detail kalibrasi radiometrik UAV, uji ANOVA/Tukey HSD, dan analisis SHAP value pada bagian Pembahasan. Mohon unggah berkas revisi pada panel <em>Revisions</em>.</p>'),(3,1048586,2,9,'2026-10-29 15:45:00','2026-11-05 06:15:20','Re: Penyampaian Revisi Naskah & Tanggapan atas Masukan Reviewer','<p>Terima kasih kepada Editor dan Mitra Bebestari atas masukan yang sangat konstruktif. Kami telah merevisi naskah secara menyeluruh (menambahkan detail kalibrasi radiometrik DJI Mavic 3M, uji ANOVA/Tukey HSD &alpha; = 0,05, serta interpretasi SHAP value kanal Red Edge 42,6% dan VWC tanah 31,8%) dan mengunggah berkas <code>Naskah_Revisi_Author_Terverifikasi_Hortus_Journal.docx</code>.</p>'),(4,1048586,3,9,'2026-11-02 13:30:00','2026-11-05 06:15:20','Selesai Copyediting & Validasi Sitasi APA 7th Edition + DOI','<p>Layout Editor, Copyeditor &amp; Production Team (Nayla Syukurillah) telah menyelesaikan penyuntingan keterbacaan bahasa ilmiah, keseragaman satuan SI, serta validasi daftar rujukan APA 7th Edition. Berkas hasil penyuntingan akhir (<code>Naskah_Copyedited_Final_Terverifikasi_HJ.docx</code>) telah diunggah pada panel <em>Copyedited</em> dan telah disetujui Penulis.</p>'),(5,1048586,3,9,'2026-11-03 09:15:00','2026-11-05 06:15:20','Re: Persetujuan Hasil Copyediting oleh Penulis','<p>Kami telah memeriksa berkas hasil <em>Copyediting</em> dan menyetujui seluruh perbaikan redaksional untuk dilanjutkan ke tahap pembuatan Galley PDF (<em>Production</em>).</p>'),(6,1048586,4,9,'2026-11-04 11:15:00','2026-11-05 06:15:20','Unggah File Galley PDF Siap Publikasi (Galley_Final_HJ_Vol1_No1_2026.pdf)','<p>File tampilan akhir <strong>Galley PDF</strong> telah selesai ditata letak sesuai template resmi <em>Hortus Journal</em> (lengkap dengan header volume/nomor, halaman 1–12, lisensi CC BY 4.0, dan identitas DOI) serta diunggah pada panel <em>Galleys</em>. Naskah telah dijadwalkan terbit pada <strong>Vol. 1 No. 1 (2026)</strong>.</p>');
 /*!40000 ALTER TABLE `notes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2028,7 +2028,7 @@ CREATE TABLE `query_participants` (
 
 LOCK TABLES `query_participants` WRITE;
 /*!40000 ALTER TABLE `query_participants` DISABLE KEYS */;
-INSERT INTO `query_participants` VALUES (1,5),(1,6),(1,8),(2,5),(2,6),(2,8),(3,6),(3,8),(3,9),(4,5),(4,8),(4,9);
+INSERT INTO `query_participants` VALUES (1,5),(1,6),(1,9),(2,5),(2,6),(2,9),(3,6),(3,9),(4,5),(4,9);
 /*!40000 ALTER TABLE `query_participants` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2107,8 +2107,56 @@ CREATE TABLE `review_assignments` (
 
 LOCK TABLES `review_assignments` WRITE;
 /*!40000 ALTER TABLE `review_assignments` DISABLE KEYS */;
-INSERT INTO `review_assignments` VALUES (1,1,7,NULL,2,'2026-10-14 11:00:00','2026-10-14 11:05:00','2026-10-15 08:30:00','2026-10-25 14:20:00','2026-10-26 09:00:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-26 09:00:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0),(2,1,10,NULL,1,'2026-10-14 11:10:00','2026-10-14 11:12:00','2026-10-15 09:45:00','2026-10-26 16:10:00','2026-10-27 08:30:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-27 08:30:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0);
+INSERT INTO `review_assignments` VALUES (1,1,4,NULL,2,'2026-10-14 11:00:00','2026-10-14 11:05:00','2026-10-15 08:30:00','2026-10-25 14:20:00','2026-10-26 09:00:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-26 09:00:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0),(2,1,6,NULL,1,'2026-10-14 11:10:00','2026-10-14 11:12:00','2026-10-15 09:45:00','2026-10-26 16:10:00','2026-10-27 08:30:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-27 08:30:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0);
 /*!40000 ALTER TABLE `review_assignments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `review_assignments_backup`
+--
+
+DROP TABLE IF EXISTS `review_assignments_backup`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `review_assignments_backup` (
+  `review_id` bigint(20) NOT NULL DEFAULT 0,
+  `submission_id` bigint(20) NOT NULL,
+  `reviewer_id` bigint(20) NOT NULL,
+  `competing_interests` text CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `recommendation` smallint(6) DEFAULT NULL,
+  `date_assigned` datetime DEFAULT NULL,
+  `date_notified` datetime DEFAULT NULL,
+  `date_confirmed` datetime DEFAULT NULL,
+  `date_completed` datetime DEFAULT NULL,
+  `date_acknowledged` datetime DEFAULT NULL,
+  `date_due` datetime DEFAULT NULL,
+  `date_response_due` datetime DEFAULT NULL,
+  `last_modified` datetime DEFAULT NULL,
+  `reminder_was_automatic` smallint(6) NOT NULL DEFAULT 0,
+  `declined` smallint(6) NOT NULL DEFAULT 0,
+  `cancelled` smallint(6) NOT NULL DEFAULT 0,
+  `reviewer_file_id` bigint(20) DEFAULT NULL,
+  `date_rated` datetime DEFAULT NULL,
+  `date_reminded` datetime DEFAULT NULL,
+  `quality` smallint(6) DEFAULT NULL,
+  `review_round_id` bigint(20) NOT NULL,
+  `stage_id` smallint(6) NOT NULL,
+  `review_method` smallint(6) NOT NULL DEFAULT 1,
+  `round` smallint(6) NOT NULL DEFAULT 1,
+  `step` smallint(6) NOT NULL DEFAULT 1,
+  `review_form_id` bigint(20) DEFAULT NULL,
+  `unconsidered` smallint(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `review_assignments_backup`
+--
+
+LOCK TABLES `review_assignments_backup` WRITE;
+/*!40000 ALTER TABLE `review_assignments_backup` DISABLE KEYS */;
+INSERT INTO `review_assignments_backup` VALUES (1,1,7,NULL,2,'2026-10-14 11:00:00','2026-10-14 11:05:00','2026-10-15 08:30:00','2026-10-25 14:20:00','2026-10-26 09:00:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-26 09:00:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0),(2,1,10,NULL,1,'2026-10-14 11:10:00','2026-10-14 11:12:00','2026-10-15 09:45:00','2026-10-26 16:10:00','2026-10-27 08:30:00','2026-11-04 23:59:59','2026-10-21 23:59:59','2026-10-27 08:30:00',0,0,0,NULL,NULL,NULL,5,1,3,2,1,4,1,0);
+/*!40000 ALTER TABLE `review_assignments_backup` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -2450,7 +2498,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('0t4ulf7dmgssno8vqean2bd012',1,'192.168.1.174','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',1788162339,1788164100,1,'csrf|a:2:{s:9:\"timestamp\";i:1788164100;s:5:\"token\";s:32:\"212e05604891f05534148d9436f754c7\";}userId|i:1;username|s:5:\"admin\";','192.168.1.174'),('1vt5rjnms6l6u4j1jov3hfv4h2',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793855800,1793855808,0,'','localhost'),('3gpnvflk33l3nsus27oln0c1k1',NULL,'127.0.0.1','Mozilla/5.0 (X11; Linux x86_64; rv:154.0) Gecko/20100101 Firefox/154.0',1788161459,1788161459,0,'','localhost'),('52vdus58d9nsu14mhjeeru3l8q',NULL,'::1','curl/8.23.0',1793852634,1793852634,0,'csrf|a:2:{s:9:\"timestamp\";i:1793852634;s:5:\"token\";s:32:\"a72432addb8a5d951e27669aa6cc5071\";}','localhost'),('5rok9q89g26b6o301s3tjod3mh',1,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36',1789099263,1789350785,1,'csrf|a:2:{s:9:\"timestamp\";i:1789350785;s:5:\"token\";s:32:\"c98acf9ae13089dd9a6d68c188ae946e\";}userId|i:1;username|s:5:\"admin\";','localhost'),('8ni4oh5nr5hcr3k59hv2t0v8fc',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793856649,1793856657,0,'','localhost'),('asefocqbpaumhtm2fecceu9jae',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793855741,1793855749,0,'','localhost'),('c62o6k235mp595gnbq697o2bcs',NULL,'::1','curl/8.23.0',1793767221,1793767221,0,'','localhost'),('j18mj48jipkv276k7l2l2tgg45',3,'192.168.1.53','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36',1788163021,1788163082,0,'csrf|a:2:{s:9:\"timestamp\";i:1788163082;s:5:\"token\";s:32:\"dc60dca70b27b125be71900863ec1d4c\";}username|s:5:\"ilham\";userId|i:3;','192.168.1.174'),('kpng6gse8e4flgnsbjcspakoe1',NULL,'','',1793852934,1793852934,0,'','localhost'),('l7v65os99gsas0vq767nvcff1c',2,'192.168.1.54','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0',1788161907,1788164004,0,'csrf|a:2:{s:9:\"timestamp\";i:1788164004;s:5:\"token\";s:32:\"ba96399649e10ec844ec2d5103ead0c3\";}username|s:6:\"admin2\";userId|i:2;','192.168.1.174'),('mbnj3rqvurnvp1n681n3rpoi65',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36',1793727615,1793727615,0,'csrf|a:2:{s:9:\"timestamp\";i:1793727615;s:5:\"token\";s:32:\"45eb0553182eef074ae82bc2859e7175\";}','localhost'),('ptqdl5jhkm8a2n8c61dqffjt4h',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36',1793854000,1793858338,0,'csrf|a:2:{s:9:\"timestamp\";i:1793856594;s:5:\"token\";s:32:\"96bde1e9b2b2805deabfd0c40654036d\";}','localhost'),('rm8nvcuo6mm18lq89m4tjela92',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793856563,1793856572,0,'','localhost'),('vn6bjt5uqtkqg3vijrlcqvta9c',7,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793852894,1793854746,1,'csrf|a:2:{s:9:\"timestamp\";i:1793854746;s:5:\"token\";s:32:\"388a43092f274d3ab1b3da63d0902d04\";}username|s:11:\"reviewer_01\";userId|i:7;','localhost');
+INSERT INTO `sessions` VALUES ('1vt5rjnms6l6u4j1jov3hfv4h2',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793855800,1793855808,0,'','localhost'),('22hhtkrclvsdqchtmsme600s5b',NULL,'::1','curl/8.23.0',1793858869,1793858869,0,'','localhost'),('4blf8jnu0o7lo6ih20eimg3rl9',NULL,'::1','curl/8.23.0',1793858870,1793858870,0,'csrf|a:2:{s:9:\"timestamp\";i:1793858870;s:5:\"token\";s:32:\"d7d3b7ba027f2e36e8b22920d21bfa84\";}','localhost'),('4kgcb4ntjq91v9l322gld50c14',NULL,'::1','curl/8.23.0',1793858870,1793858870,0,'','localhost'),('52vdus58d9nsu14mhjeeru3l8q',NULL,'::1','curl/8.23.0',1793852634,1793852634,0,'csrf|a:2:{s:9:\"timestamp\";i:1793852634;s:5:\"token\";s:32:\"a72432addb8a5d951e27669aa6cc5071\";}','localhost'),('55p0jic24mchgt9nk6010a9lh2',NULL,'::1','curl/8.23.0',1793858870,1793858870,0,'','localhost'),('65e6h0oo9745ejrflgu7lfi262',NULL,'::1','curl/8.23.0',1793858868,1793858868,0,'','localhost'),('6vtofpti7gqlfar8ta626c3u7a',NULL,'::1','curl/8.23.0',1793866066,1793866066,0,'','localhost'),('8g78dfhprk70dp5lnqbh0lgva0',NULL,'::1','curl/8.23.0',1793858870,1793858870,0,'','localhost'),('8ni4oh5nr5hcr3k59hv2t0v8fc',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793856649,1793856657,0,'','localhost'),('asefocqbpaumhtm2fecceu9jae',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793855741,1793855749,0,'','localhost'),('bsd71h6q2lclvocmlvalg9l658',NULL,'::1','curl/8.23.0',1793858871,1793858871,0,'','localhost'),('cojf8f7401oel8t2lm5h68f8l5',NULL,'::1','curl/8.23.0',1793858869,1793858869,0,'','localhost'),('cpbrms0qg9gqf3kg26r4k1lgi3',NULL,'::1','curl/8.23.0',1793858869,1793858869,0,'','localhost'),('hrivmolb2suekfqcptfaltojhm',NULL,'::1','curl/8.23.0',1793858869,1793858869,0,'','localhost'),('kpng6gse8e4flgnsbjcspakoe1',NULL,'','',1793852934,1793852934,0,'','localhost'),('kspamtj1hfohkbj9n0ik8iqqr5',NULL,'::1','curl/8.23.0',1793858871,1793858871,0,'csrf|a:2:{s:9:\"timestamp\";i:1793858871;s:5:\"token\";s:32:\"010ccc5c80b2e4d1b9613942d0eee347\";}','localhost'),('polcd30tbf1hkdrjaugm2orp1h',NULL,'::1','curl/8.23.0',1793858870,1793858870,0,'','localhost'),('ptqdl5jhkm8a2n8c61dqffjt4h',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36',1793854000,1793859740,0,'csrf|a:2:{s:9:\"timestamp\";i:1793856594;s:5:\"token\";s:32:\"96bde1e9b2b2805deabfd0c40654036d\";}','localhost'),('rm8nvcuo6mm18lq89m4tjela92',NULL,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793856563,1793856572,0,'','localhost'),('tji1ucbmc9jn7na76jvoitvues',NULL,'::1','curl/8.23.0',1793858869,1793858869,0,'','localhost'),('vn6bjt5uqtkqg3vijrlcqvta9c',7,'::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36',1793852894,1793854746,1,'csrf|a:2:{s:9:\"timestamp\";i:1793854746;s:5:\"token\";s:32:\"388a43092f274d3ab1b3da63d0902d04\";}username|s:11:\"reviewer_01\";userId|i:7;','localhost');
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2535,8 +2583,36 @@ CREATE TABLE `stage_assignments` (
 
 LOCK TABLES `stage_assignments` WRITE;
 /*!40000 ALTER TABLE `stage_assignments` DISABLE KEYS */;
-INSERT INTO `stage_assignments` VALUES (1,1,2,4,'2026-11-05 06:15:20',0,1),(2,1,3,5,'2026-11-05 06:15:20',0,1),(3,1,5,6,'2026-11-05 06:15:20',0,1),(4,1,14,8,'2026-11-05 06:15:20',0,1),(5,1,11,9,'2026-11-05 06:15:20',0,0),(6,1,7,9,'2026-11-05 06:15:20',0,0);
+INSERT INTO `stage_assignments` VALUES (1,1,2,4,'2026-11-05 06:15:20',0,1),(2,1,3,5,'2026-11-05 06:15:20',0,1),(3,1,5,6,'2026-11-05 06:15:20',0,1),(4,1,14,9,'2026-11-05 06:15:20',0,1),(5,1,11,9,'2026-11-05 06:15:20',0,0),(6,1,7,9,'2026-11-05 06:15:20',0,0);
 /*!40000 ALTER TABLE `stage_assignments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `stage_assignments_backup`
+--
+
+DROP TABLE IF EXISTS `stage_assignments_backup`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `stage_assignments_backup` (
+  `stage_assignment_id` bigint(20) NOT NULL DEFAULT 0,
+  `submission_id` bigint(20) NOT NULL,
+  `user_group_id` bigint(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL,
+  `date_assigned` datetime NOT NULL,
+  `recommend_only` smallint(6) NOT NULL DEFAULT 0,
+  `can_change_metadata` smallint(6) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `stage_assignments_backup`
+--
+
+LOCK TABLES `stage_assignments_backup` WRITE;
+/*!40000 ALTER TABLE `stage_assignments_backup` DISABLE KEYS */;
+INSERT INTO `stage_assignments_backup` VALUES (1,1,2,4,'2026-11-05 06:15:20',0,1),(2,1,3,5,'2026-11-05 06:15:20',0,1),(3,1,5,6,'2026-11-05 06:15:20',0,1),(4,1,14,8,'2026-11-05 06:15:20',0,1),(5,1,11,9,'2026-11-05 06:15:20',0,0),(6,1,7,9,'2026-11-05 06:15:20',0,0);
+/*!40000 ALTER TABLE `stage_assignments_backup` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -3172,7 +3248,7 @@ CREATE TABLE `user_interests` (
 
 LOCK TABLES `user_interests` WRITE;
 /*!40000 ALTER TABLE `user_interests` DISABLE KEYS */;
-INSERT INTO `user_interests` VALUES (7,1),(7,2),(7,3),(7,4),(7,5),(7,6),(10,7),(10,8),(10,9),(10,10);
+INSERT INTO `user_interests` VALUES (4,1),(4,2),(4,3),(4,4),(4,5),(4,6),(6,7),(6,8),(6,9),(6,10);
 /*!40000 ALTER TABLE `user_interests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3203,7 +3279,7 @@ CREATE TABLE `user_settings` (
 
 LOCK TABLES `user_settings` WRITE;
 /*!40000 ALTER TABLE `user_settings` DISABLE KEYS */;
-INSERT INTO `user_settings` VALUES (1,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911718423)','string'),(1,'en_US','familyName',0,0,'Rizky','string'),(1,'en_US','givenName',0,0,'Mohammad Yanuar','string'),(4,'','orcid',0,0,'https://orcid.org/0000-0002-8423-0001','string'),(4,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911718423)','string'),(4,'en_US','biography',0,0,'Journal Manager & Managing Editor Hortus Journal. Bertanggung jawab atas konfigurasi arsitektur OJS, manajemen hak akses peran pengguna (User Roles), dan pengawasan kualitas operasional penerbitan.','string'),(4,'en_US','familyName',0,0,'Rizky','string'),(4,'en_US','givenName',0,0,'Mohammad Yanuar','string'),(5,'','orcid',0,0,'https://orcid.org/0000-0002-1001-0001','string'),(5,'en_US','affiliation',0,0,'Universitas Negeri Malang','string'),(5,'en_US','biography',0,0,'Pemimpin Redaksi (Editor-in-Chief) Hortus Journal. Memimpin kebijakan ilmiah, seleksi kelayakan awal (Initial Screening), pengawasan etika publikasi COPE, dan penetapan keputusan akhir penerbitan naskah.','string'),(5,'en_US','familyName',0,0,'Rahmania, S.Kom, M.Kom','string'),(5,'en_US','givenName',0,0,'Lidya Amalia','string'),(6,'','orcid',0,0,'https://orcid.org/0000-0002-3861-0002','string'),(6,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911723861)','string'),(6,'en_US','biography',0,0,'Section Editor Hortus Journal. Mengelola penugasan mitra bebestari (Double-Blind Peer Review) dan memvalidasi alur revisi naskah.','string'),(6,'en_US','familyName',0,0,'Lestari','string'),(6,'en_US','givenName',0,0,'Nirmala Dwi','string'),(7,'','orcid',0,0,'https://orcid.org/0000-0002-8423-0001','string'),(7,'en_US','affiliation',0,0,'Universitas Negeri Malang','string'),(7,'en_US','biography',0,0,'Akun simulasi Mitra Bebestari (Reviewer) pada proses evaluasi Double-Blind Peer Review di Hortus Journal.','string'),(7,'en_US','familyName',0,0,'Rizky','string'),(7,'en_US','givenName',0,0,'Mohammad Yanuar','string'),(8,'','orcid',0,0,'https://orcid.org/0000-0002-1564-0003','string'),(8,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911721564)','string'),(8,'en_US','biography',0,0,'Akun simulasi Penulis (Author) untuk pengujian pengajuan naskah dan alur kerja penerbitan di Hortus Journal.','string'),(8,'en_US','familyName',0,0,'Syukurillah','string'),(8,'en_US','givenName',0,0,'Nayla','string'),(9,'','orcid',0,0,'https://orcid.org/0000-0002-1564-0003','string'),(9,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911721564)','string'),(9,'en_US','biography',0,0,'Layout Editor, Copyeditor & Production Team Hortus Journal. Bertanggung jawab atas penyuntingan gaya selingkung (Copyediting), tata letak Galley PDF, dan kesiapan pracetak terbitan.','string'),(9,'en_US','familyName',0,0,'Syukurillah','string'),(9,'en_US','givenName',0,0,'Nayla','string'),(10,'','orcid',0,0,'https://orcid.org/0000-0002-3861-0002','string'),(10,'en_US','affiliation',0,0,'Universitas Negeri Malang','string'),(10,'en_US','biography',0,0,'Akun simulasi Mitra Bebestari (Reviewer) kedua pada proses evaluasi Double-Blind Peer Review di Hortus Journal.','string'),(10,'en_US','familyName',0,0,'Lestari','string'),(10,'en_US','givenName',0,0,'Nirmala Dwi','string');
+INSERT INTO `user_settings` VALUES (1,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911718423)','string'),(1,'en_US','familyName',0,0,'Rizky','string'),(1,'en_US','givenName',0,0,'Mohammad Yanuar','string'),(4,'','orcid',0,0,'https://orcid.org/0000-0002-8423-0001','string'),(4,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911718423)','string'),(4,'en_US','biography',0,0,'Journal Manager & Managing Editor Hortus Journal. Bertanggung jawab atas konfigurasi arsitektur OJS, manajemen hak akses peran pengguna (User Roles), dan pengawasan kualitas operasional penerbitan.','string'),(4,'en_US','familyName',0,0,'Rizky','string'),(4,'en_US','givenName',0,0,'Mohammad Yanuar','string'),(5,'','orcid',0,0,'https://orcid.org/0000-0002-1001-0001','string'),(5,'en_US','affiliation',0,0,'Universitas Negeri Malang','string'),(5,'en_US','biography',0,0,'Pemimpin Redaksi (Editor-in-Chief) Hortus Journal. Memimpin kebijakan ilmiah, seleksi kelayakan awal (Initial Screening), pengawasan etika publikasi COPE, dan penetapan keputusan akhir penerbitan naskah.','string'),(5,'en_US','familyName',0,0,'Rahmania, S.Kom, M.Kom','string'),(5,'en_US','givenName',0,0,'Lidya Amalia','string'),(6,'','orcid',0,0,'https://orcid.org/0000-0002-3861-0002','string'),(6,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911723861)','string'),(6,'en_US','biography',0,0,'Section Editor Hortus Journal. Mengelola penugasan mitra bebestari (Double-Blind Peer Review) dan memvalidasi alur revisi naskah.','string'),(6,'en_US','familyName',0,0,'Lestari','string'),(6,'en_US','givenName',0,0,'Nirmala Dwi','string'),(9,'','orcid',0,0,'https://orcid.org/0000-0002-1564-0003','string'),(9,'en_US','affiliation',0,0,'Universitas Negeri Malang (NIM 250911721564)','string'),(9,'en_US','biography',0,0,'Layout Editor, Copyeditor & Production Team Hortus Journal. Bertanggung jawab atas penyuntingan gaya selingkung (Copyediting), tata letak Galley PDF, dan kesiapan pracetak terbitan.','string'),(9,'en_US','familyName',0,0,'Syukurillah','string'),(9,'en_US','givenName',0,0,'Nayla','string');
 /*!40000 ALTER TABLE `user_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3229,8 +3305,31 @@ CREATE TABLE `user_user_groups` (
 
 LOCK TABLES `user_user_groups` WRITE;
 /*!40000 ALTER TABLE `user_user_groups` DISABLE KEYS */;
-INSERT INTO `user_user_groups` VALUES (1,1),(2,1),(2,4),(2,5),(3,4),(3,5),(4,9),(5,6),(7,9),(11,9),(13,9),(14,8),(16,7),(16,10);
+INSERT INTO `user_user_groups` VALUES (1,1),(2,1),(2,4),(2,5),(2,6),(2,9),(3,4),(3,5),(3,6),(3,9),(4,9),(5,6),(7,9),(11,9),(13,9),(14,4),(14,6),(14,9),(16,4),(16,6),(16,9);
 /*!40000 ALTER TABLE `user_user_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_user_groups_backup`
+--
+
+DROP TABLE IF EXISTS `user_user_groups_backup`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_user_groups_backup` (
+  `user_group_id` bigint(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_user_groups_backup`
+--
+
+LOCK TABLES `user_user_groups_backup` WRITE;
+/*!40000 ALTER TABLE `user_user_groups_backup` DISABLE KEYS */;
+INSERT INTO `user_user_groups_backup` VALUES (1,1),(2,1),(2,4),(2,5),(2,11),(3,4),(3,5),(3,11),(4,9),(5,6),(7,9),(11,9),(13,9),(14,8),(16,7),(16,10);
+/*!40000 ALTER TABLE `user_user_groups_backup` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -3265,7 +3364,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `users_username` (`username`),
   UNIQUE KEY `users_email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3274,8 +3373,50 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','$2y$10$YJ4D3oMHQ0xuCtD5DlARw.qpcXMOicpXkueQseft.fbt4Jbefimje','yansmurf7@gmail.com',NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,'2026-08-31 08:59:39',NULL,'2026-09-11 06:01:12',0,NULL,NULL,0,NULL,1),(4,'Admin_jurnal','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','yanuar.rizky@hortus.ac.id',NULL,'+62-812-3456-8423',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(5,'editor_utama','$2y$10$6ZovLMeJXe1uXHzLWv1QVOqLQFJ8o0tAL749KHo6v6T.mBNO/5sHC','lidya.rahmania@hortus.ac.id',NULL,'+62-341-551312',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:58:34',0,NULL,NULL,0,NULL,1),(6,'editor_subjek','$2y$10$YkXRWDJex58W9NBGJuGd6.zwjNJ6gYKJiZ3.Ez.wivKxgmCc9OnA.','nirmala.lestari@hortus.ac.id',NULL,'+62-812-3456-3861',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(7,'reviewer_01','$2y$10$PGYthrTKuh62om8zzgj6nO3jR2KtCYYmK9Rf/fS6czD4.bJEI1812','reviewer1@hortus.ac.id',NULL,'+62-812-3456-8424',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:59:04',0,NULL,NULL,0,NULL,1),(8,'author_test','$2y$10$1pyEvE8DmrTEgYQikZ3g..2HgAAMz4tOCkJXyAl0TBebCzX0xeNpi','nayla.syukurillah@hortus.ac.id',NULL,'+62-812-3456-1565',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1),(9,'layout_edit','$2y$10$9thl3uGbe1O0wP3QWB1VBubGjOxuI2guKt3Ah3pBRiSG1J6T3m9pe','nayla.layout@hortus.ac.id',NULL,'+62-812-3456-1564',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1),(10,'reviewer_02','$2y$10$5I/ZDoDnLXLwOYs2JiIBzuubAJmoH8o4DHq2xpD2.HxGJyXSffQJe','reviewer2@hortus.ac.id',NULL,'+62-812-3456-3862',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1);
+INSERT INTO `users` VALUES (1,'admin','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','yansmurf7@gmail.com',NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,'2026-08-31 08:59:39',NULL,'2026-09-11 06:01:12',0,NULL,NULL,0,NULL,1),(4,'yanuar','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','yanuar.rizky@hortus.ac.id',NULL,'+62-812-3456-8423',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(5,'editor_utama','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','lidya.rahmania@hortus.ac.id',NULL,'+62-341-551312',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:58:34',0,NULL,NULL,0,NULL,1),(6,'nirmala','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','nirmala.lestari@hortus.ac.id',NULL,'+62-812-3456-3861',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(9,'nayla','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','nayla.syukurillah@hortus.ac.id',NULL,'+62-812-3456-1564',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_backup`
+--
+
+DROP TABLE IF EXISTS `users_backup`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_backup` (
+  `user_id` bigint(20) NOT NULL DEFAULT 0,
+  `username` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `url` varchar(2047) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `phone` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `mailing_address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `billing_address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `country` varchar(90) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `locales` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `gossip` text CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `date_last_email` datetime DEFAULT NULL,
+  `date_registered` datetime NOT NULL,
+  `date_validated` datetime DEFAULT NULL,
+  `date_last_login` datetime NOT NULL,
+  `must_change_password` smallint(6) DEFAULT NULL,
+  `auth_id` bigint(20) DEFAULT NULL,
+  `auth_str` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `disabled` smallint(6) NOT NULL DEFAULT 0,
+  `disabled_reason` text CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `inline_help` smallint(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_backup`
+--
+
+LOCK TABLES `users_backup` WRITE;
+/*!40000 ALTER TABLE `users_backup` DISABLE KEYS */;
+INSERT INTO `users_backup` VALUES (1,'admin','$2y$10$YJ4D3oMHQ0xuCtD5DlARw.qpcXMOicpXkueQseft.fbt4Jbefimje','yansmurf7@gmail.com',NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,'2026-08-31 08:59:39',NULL,'2026-09-11 06:01:12',0,NULL,NULL,0,NULL,1),(4,'Admin_jurnal','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','yanuar.rizky@hortus.ac.id',NULL,'+62-812-3456-8423',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(5,'editor_utama','$2y$10$6ZovLMeJXe1uXHzLWv1QVOqLQFJ8o0tAL749KHo6v6T.mBNO/5sHC','lidya.rahmania@hortus.ac.id',NULL,'+62-341-551312',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:58:34',0,NULL,NULL,0,NULL,1),(6,'editor_subjek','$2y$10$YkXRWDJex58W9NBGJuGd6.zwjNJ6gYKJiZ3.Ez.wivKxgmCc9OnA.','nirmala.lestari@hortus.ac.id',NULL,'+62-812-3456-3861',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1),(7,'reviewer_01','$2y$10$PGYthrTKuh62om8zzgj6nO3jR2KtCYYmK9Rf/fS6czD4.bJEI1812','reviewer1@hortus.ac.id',NULL,'+62-812-3456-8424',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:59:04',0,NULL,NULL,0,NULL,1),(8,'author_test','$2y$10$1pyEvE8DmrTEgYQikZ3g..2HgAAMz4tOCkJXyAl0TBebCzX0xeNpi','nayla.syukurillah@hortus.ac.id',NULL,'+62-812-3456-1565',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1),(9,'layout_edit','$2y$10$9thl3uGbe1O0wP3QWB1VBubGjOxuI2guKt3Ah3pBRiSG1J6T3m9pe','nayla.layout@hortus.ac.id',NULL,'+62-812-3456-1564',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1),(10,'reviewer_02','$2y$10$5I/ZDoDnLXLwOYs2JiIBzuubAJmoH8o4DHq2xpD2.HxGJyXSffQJe','reviewer2@hortus.ac.id',NULL,'+62-812-3456-3862',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:34',0,NULL,NULL,0,NULL,1),(11,'admin_journal','$2y$10$3X7v25Kz0/7A0fJG/B6XbeW78/5JSWMUPG2/Ybv9trXaNrCuDwUsq','admin_journal@hortus.ac.id',NULL,'+62-812-3456-8423',NULL,NULL,'ID','',NULL,NULL,'2026-11-05 05:36:33','2026-11-05 06:15:17','2026-11-05 05:36:33',0,NULL,NULL,0,NULL,1);
+/*!40000 ALTER TABLE `users_backup` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -3320,4 +3461,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-05 13:07:48
+-- Dump completed on 2026-11-05 20:36:04
