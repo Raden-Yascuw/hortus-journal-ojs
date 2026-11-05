@@ -659,6 +659,115 @@
 		</main>
 	</div>
 
+	
+	<!-- MODAL: TAHAP 3 REVIEW FORM EVALUATION -->
+	<div class="modal_backdrop" id="reviewFormModal">
+		<div class="modal_card" style="max-width:850px; max-height:90vh; overflow-y:auto;">
+			<div class="modal_head" style="background:#1E3A8A; color:#FFFFFF;">
+				<span>Tahap 3: Formulir Evaluasi Substantif &amp; Metodologis Naskah (Double-Blind Review Form)</span>
+				<span style="cursor:pointer;" onclick="closeReviewFormModal()">✕</span>
+			</div>
+			<div class="modal_body" style="padding:20px; font-size:13px; color:#1E293B;">
+				<div style="background:#F1F5F9; border-left:4px solid #3B82F6; padding:12px; margin-bottom:16px; border-radius:4px;">
+					<strong>Informasi Naskah &amp; Penelaah:</strong><br>
+					Naskah: <em>Sistem Deteksi Dini Cekaman Kekeringan dan Manajemen Irigasi Tetes Cerdas Berbasis LoRa-IoT pada Perkebunan Kopi Robusta</em> (Blind Manuscript)<br>
+					Penelaah: <strong>Prof. Dr. Ir. Hendra Kusuma, M.Sc.</strong> (Reviewer 1) • Metode: <strong>Double-Blind Peer Review</strong>
+				</div>
+
+				<form onsubmit="submitReviewForm(event)">
+					<!-- Indikator 1 -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">1. Kesesuaian Fokus &amp; Ruang Lingkup (Focus &amp; Scope Alignment) *</label>
+						<p style="font-size:12px; color:#64748B; margin-bottom:6px;">Relevansi topik naskah dengan sains perkebunan tropika berkelanjutan dan teknologi agroindustri presisi.</p>
+						<div style="display:flex; gap:16px;">
+							<label><input type="radio" name="crit1" value="5" checked> Sangat Baik (5)</label>
+							<label><input type="radio" name="crit1" value="4"> Baik (4)</label>
+							<label><input type="radio" name="crit1" value="3"> Cukup (3)</label>
+							<label><input type="radio" name="crit1" value="2"> Kurang (2)</label>
+						</div>
+					</div>
+
+					<!-- Indikator 2 -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">2. Orisinalitas, Kebaruan Ilmiah (Novelty), dan Kontribusi Akademis *</label>
+						<p style="font-size:12px; color:#64748B; margin-bottom:6px;">Kejelasan state-of-the-art, research gap, serta kebaruan temuan integrasi LoRa-IoT pada tanaman kopi.</p>
+						<div style="display:flex; gap:16px;">
+							<label><input type="radio" name="crit2" value="5"> Sangat Baik (5)</label>
+							<label><input type="radio" name="crit2" value="4" checked> Baik (4)</label>
+							<label><input type="radio" name="crit2" value="3"> Cukup (3)</label>
+						</div>
+					</div>
+
+					<!-- Indikator 3 -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">3. Ketepatan Metodologi, Rancangan Percobaan &amp; Validitas Analisis Statistik *</label>
+						<p style="font-size:12px; color:#64748B; margin-bottom:6px;">Rancangan petak perlakuan, kalibrasi multi-kedalaman sensor tanah, dan formulasi Logika Fuzzy Mamdani.</p>
+						<div style="display:flex; gap:16px;">
+							<label><input type="radio" name="crit3" value="5"> Sangat Baik (5)</label>
+							<label><input type="radio" name="crit3" value="4" checked> Baik (4)</label>
+							<label><input type="radio" name="crit3" value="3"> Cukup (3)</label>
+						</div>
+					</div>
+
+					<!-- Indikator 4 -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">4. Kualitas Penyajian Data, Tabel/Grafik &amp; Ketajaman Pembahasan *</label>
+						<p style="font-size:12px; color:#64748B; margin-bottom:6px;">Ketepatan visualisasi dinamika lengas tanah, interpretasi galat transmisi PDR, dan perbandingan dengan literatur primer.</p>
+						<div style="display:flex; gap:16px;">
+							<label><input type="radio" name="crit4" value="5" checked> Sangat Baik (5)</label>
+							<label><input type="radio" name="crit4" value="4"> Baik (4)</label>
+						</div>
+					</div>
+
+					<!-- Indikator 5 -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">5. Kepatuhan Struktur IMRAD, Gaya Selingkung &amp; Sitasi APA 7th Edition *</label>
+						<p style="font-size:12px; color:#64748B; margin-bottom:6px;">Kerapian sistematika naskah, ketepatan satuan SI, dan proporsi literatur primer mutakhir (&ge;80% 10 tahun terakhir).</p>
+						<div style="display:flex; gap:16px;">
+							<label><input type="radio" name="crit5" value="5"> Sangat Baik (5)</label>
+							<label><input type="radio" name="crit5" value="4" checked> Baik (4)</label>
+						</div>
+					</div>
+
+					<!-- Indikator 6: Checkboxes -->
+					<div style="margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid #E2E8F0; background:#F8FAFC; padding:12px; border-radius:6px;">
+						<label style="font-weight:700; display:block; margin-bottom:8px;">6. Verifikasi Kepatuhan Etika Publikasi &amp; Anonimitas Naskah (Checklist) *</label>
+						<div style="display:flex; flex-direction:column; gap:6px;">
+							<label><input type="checkbox" checked disabled> [✓] Naskah memenuhi asas anonimitas telaah buta ganda (bebas nama/afiliasi penulis pada teks dan properties berkas).</label>
+							<label><input type="checkbox" checked disabled> [✓] Bebas dari indikasi plagiarisme, manipulasi data sensor, maupun fabrikasi hasil eksperimen.</label>
+							<label><input type="checkbox" checked disabled> [✓] Nomenklatur ilmiah binomial spesies (<em>Coffea canephora</em>) dicetak miring dan satuan SI ditulis baku.</label>
+							<label><input type="checkbox" checked disabled> [✓] Kesimpulan menjawab tujuan penelitian secara padat didukung bukti kuantitatif empiris.</label>
+						</div>
+					</div>
+
+					<!-- Indikator 7: Catatan Komentar Penulis -->
+					<div style="margin-bottom:16px;">
+						<label style="font-weight:700; display:block; margin-bottom:6px;">7. Catatan Evaluasi Konstruktif &amp; Poin Perbaikan bagi Penulis (Comments to Author) *</label>
+						<textarea rows="4" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:6px; font-family:sans-serif; font-size:12.5px; line-height:1.5;" readonly>1. Perjelas prosedur kalibrasi gravimetri sensor kadar air tanah kapasitif multi-kedalaman (10, 30, dan 50 cm) pada tekstur tanah Andosol.
+2. Tambahkan rincian nilai Packet Delivery Ratio (PDR) dan durasi konsumsi arus sleep mode modul ESP32-LoRa bertenaga surya pada kondisi kanopi lebat.
+3. Mutakhirkan daftar pustaka dengan menyertakan minimal 2–3 artikel jurnal ilmiah primer internasional bereputasi (rentang 2021–2026) terkait smart telemetry kopi robusta.</textarea>
+					</div>
+
+					<!-- Rekomendasi Putusan Akhir Reviewer -->
+					<div style="background:#FEF3C7; border:1px solid #F59E0B; padding:14px; border-radius:6px; margin-bottom:18px;">
+						<label style="font-weight:700; color:#92400E; display:block; margin-bottom:6px;">Rekomendasi Putusan Akhir Reviewer (Recommendation) *</label>
+						<select style="width:100%; padding:8px 12px; border:1px solid #F59E0B; border-radius:6px; font-weight:700; color:#92400E; background:#FFFFFF;">
+							<option value="revisions_required" selected>Revisions Required (Diterima dengan Perbaikan Minor/Mayor)</option>
+							<option value="accept">Accept Submission (Diterima Tanpa Perbaikan)</option>
+							<option value="resubmit">Resubmit for Review (Kirim Ulang untuk Putaran Review Baru)</option>
+							<option value="decline">Decline Submission (Tolak Naskah)</option>
+						</select>
+					</div>
+
+					<div style="display:flex; justify-content:flex-end; gap:10px;">
+						<button type="button" class="ojs_btn ojs_btn_secondary" onclick="closeReviewFormModal()">Tutup</button>
+						<button type="submit" class="ojs_btn" style="background:#15803D;">✓ Simpan &amp; Kirim Rekomendasi Evaluasi Reviewer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!-- Modal: New Dummy Submission -->
 	<div class="modal_backdrop" id="newSubModal">
 		<div class="modal_card">
