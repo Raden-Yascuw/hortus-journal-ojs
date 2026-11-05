@@ -424,8 +424,8 @@
 			<section id="panel_workflow" style="display:none;">
 				<div class="ojs_page_header">
 					<div>
-						<span style="font-size:12.5px; color:#64748B; font-weight:700;">SUBMISSION #1 • BAGUS SETIAWAN, S.P., M.AGR.</span>
-						<h1 class="ojs_page_title" style="margin-top:4px;">Implementation of IoT-Based Smart Drip Irrigation for Precision Robusta Coffee Cultivation in East Java</h1>
+						<span style="font-size:12.5px; color:#64748B; font-weight:700;" id="wfSubMeta">SUBMISSION #2 • NAYLA SYUKURILLAH, MOHAMMAD YANUAR RIZKY, NIRMALA DWI LESTARI</span>
+						<h1 class="ojs_page_title" style="margin-top:4px;" id="wfSubTitle">Sistem Deteksi Dini Cekaman Kekeringan dan Manajemen Irigasi Tetes Cerdas Berbasis LoRa-IoT pada Perkebunan Kopi Robusta (Coffea canephora)</h1>
 					</div>
 					<div style="display:flex; gap:10px;">
 						<a href="/article/1.html" class="ojs_btn ojs_btn_secondary"><span class="fa fa-eye"></span> View Published Article</a>
@@ -435,7 +435,7 @@
 
 				<div class="ojs_card">
 					<!-- 5 Workflow Stages -->
-					<div class="wf_stepper">
+					<div class="wf_stepper" id="wfStepperContainer">
 						<div class="wf_step completed" onclick="selectWfStage(1, this)">1. Submission ✓</div>
 						<div class="wf_step completed" onclick="selectWfStage(2, this)">2. Review (Round 1) ✓</div>
 						<div class="wf_step completed" onclick="selectWfStage(3, this)">3. Copyediting ✓</div>
@@ -715,14 +715,26 @@
 			if (navEl) navEl.classList.add('active');
 		}
 
+		let currentSubmissionId = 2;
+
 		const defaultSubmissions = [
+			{
+				id: 2,
+				author: "Nayla Syukurillah, Mohammad Yanuar Rizky, Nirmala Dwi Lestari",
+				title: "Sistem Deteksi Dini Cekaman Kekeringan dan Manajemen Irigasi Tetes Cerdas Berbasis LoRa-IoT pada Perkebunan Kopi Robusta (Coffea canephora)",
+				section: "Smart & Precision Plantation Farming",
+				stage: "Submission (Stage 1: Awaiting Editorial Screening & Review Assignment)",
+				badgeClass: "badge_amber",
+				active: true
+			},
 			{
 				id: 1,
 				author: "Nayla Syukurillah, Mohammad Yanuar Rizky, Nirmala Dwi Lestari",
-				title: "Implementation of IoT-Based Smart Drip Irrigation for Precision Robusta Coffee Cultivation in East Java",
-				section: "Original Research Articles",
+				title: "Integrasi Sensor IoT Kanopi dan Citra Multispektral UAV untuk Estimasi Presisi Produktivitas Kelapa Sawit (Elaeis guineensis Jacq.) Berkelanjutan",
+				section: "Smart & Precision Plantation Farming",
 				stage: "Published (Vol. 1 No. 1, 2026)",
-				badgeClass: "badge_green"
+				badgeClass: "badge_green",
+				active: false
 			}
 		];
 
@@ -742,7 +754,7 @@
 					</div>
 					<div class="sub_stage_col">
 						<span class="ojs_badge ${item.badgeClass}">${item.stage}</span>
-						<button class="ojs_btn ojs_btn_secondary" style="padding:5px 12px; font-size:12px;" onclick="showPanel('panel_workflow')">View Workflow</button>
+						<button class="ojs_btn ${item.id === 2 ? 'ojs_btn_amber' : 'ojs_btn_secondary'}" style="padding:5px 12px; font-size:12px;" onclick="openWorkflow(${item.id})">${item.id === 2 ? '⚡ Proses Alur Naskah Baru (#2)' : 'View Workflow (#1)'}</button>
 					</div>
 				</div>
 			`).join('');
@@ -816,8 +828,94 @@
 			`
 		};
 
+
+		function openWorkflow(subId) {
+			currentSubmissionId = subId;
+			showPanel('panel_workflow');
+			const sub = defaultSubmissions.find(s => s.id === subId) || defaultSubmissions[0];
+			
+			document.getElementById('wfSubMeta').textContent = `SUBMISSION #${sub.id} • ${sub.author.toUpperCase()}`;
+			document.getElementById('wfSubTitle').textContent = sub.title;
+
+			const stepper = document.getElementById('wfStepperContainer');
+			if (sub.id === 2) {
+				stepper.innerHTML = `
+					<div class="wf_step active" onclick="selectWfStage(1, this)" style="background:#FEF3C7; color:#92400E; border:1px solid #F59E0B;">1. Submission (Sedang Berjalan) ⏳</div>
+					<div class="wf_step" onclick="selectWfStage(2, this)" style="opacity:0.65;">2. Review (Belum Ditugaskan)</div>
+					<div class="wf_step" onclick="selectWfStage(3, this)" style="opacity:0.65;">3. Copyediting (Pending)</div>
+					<div class="wf_step" onclick="selectWfStage(4, this)" style="opacity:0.65;">4. Production (Pending)</div>
+					<div class="wf_step" onclick="selectWfStage(5, this)" style="opacity:0.65;">5. Publication (Pending)</div>
+				`;
+				selectWfStage(1);
+			} else {
+				stepper.innerHTML = `
+					<div class="wf_step completed" onclick="selectWfStage(1, this)">1. Submission ✓</div>
+					<div class="wf_step completed" onclick="selectWfStage(2, this)">2. Review (Round 1) ✓</div>
+					<div class="wf_step completed" onclick="selectWfStage(3, this)">3. Copyediting ✓</div>
+					<div class="wf_step completed" onclick="selectWfStage(4, this)">4. Production ✓</div>
+					<div class="wf_step active" onclick="selectWfStage(5, this)">5. Publication (Live) ★</div>
+				`;
+				selectWfStage(5);
+			}
+		}
+    
+		const stageTemplatesSub2 = {
+			1: `
+				<div class="wf_box" style="border-left:4px solid #F59E0B; margin-bottom:16px;">
+					<div class="wf_box_head" style="background:#FFFBEB;">
+						<span><strong>Tahap 1: Submission Baru (Baru Diajukan &amp; Menunggu Screening)</strong></span>
+						<span class="ojs_badge badge_amber">Status: Awaiting Assignment</span>
+					</div>
+					<div class="wf_box_content" style="font-size:13px; color:#334155;">
+						<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:12px; margin-bottom:12px;">
+							<div style="font-weight:700; color:#0F172A; margin-bottom:6px;">Rincian 5 Langkah Submisi Penulis (Author Checklist):</div>
+							<div>✓ <strong>Section:</strong> Smart &amp; Precision Plantation Farming</div>
+							<div>✓ <strong>Submission Checklist:</strong> 5 Butir Kepatuhan Disetujui Lengkap</div>
+							<div>✓ <strong>Lisensi:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)</div>
+							<div>✓ <strong>Identitas:</strong> Main Manuscript telah dianonimkan (Double-Blind Ready)</div>
+						</div>
+						<div class="file_row">
+							<span>📄 <strong>Naskah_Submisi_Awal_Dummy_2_Hortus_Journal.docx</strong> (Article Text - Primary File)</span>
+							<span>Nov 5, 2026 • <a href="/pdf/Naskah_Submisi_Awal_Dummy_2_Hortus_Journal.pdf" target="_blank" class="ojs_btn" style="padding:3px 8px; font-size:11.5px;">Download File Submisi</a></span>
+						</div>
+						<div style="margin-top:14px; display:flex; gap:10px; align-items:center;">
+							<span style="font-size:12px; font-weight:700; color:#475569;">Aksi Tindakan Editorial:</span>
+							<button class="ojs_btn" style="background:#15803D; font-size:12px; padding:6px 14px;" onclick="alert('Aksi Editorial: Naskah dikirim ke Tahap 2 (External Double-Blind Review). Status diperbarui.')">✓ Kirim ke Tahap Review (Send to Review)</button>
+							<button class="ojs_btn ojs_btn_secondary" style="font-size:12px; padding:6px 14px;" onclick="alert('Permintaan revisi format diajukan kepada penulis.')">Minta Revisi Awal (Decline/Revise)</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="wf_box">
+					<div class="wf_box_head"><span>Diskusi Pra-Review (Pre-Review Discussions)</span><span class="ojs_badge badge_blue">0 Catatan Diskusi</span></div>
+					<div class="wf_box_content">
+						<p style="color:#64748B; font-size:12.5px; margin-bottom:10px;">Belum ada riwayat diskusi pra-review pada naskah ini. Editor dapat menambahkan catatan uji kemiripan Turnitin atau instruksi awal bagi reviewer.</p>
+						<button class="ojs_btn ojs_btn_secondary" style="font-size:12px; padding:4px 10px;" onclick="alert('Formulir diskusi pra-review dibuka.')">+ Tambah Diskusi Pra-Review</button>
+					</div>
+				</div>
+			`,
+			2: `
+				<div class="wf_box" style="border-left:4px solid #3B82F6;">
+					<div class="wf_box_head" style="background:#EFF6FF;"><span>Tahap 2: Peer Review (External Round 1)</span><span class="ojs_badge badge_blue">Siap Penugasan Reviewer</span></div>
+					<div class="wf_box_content">
+						<p style="color:#334155; margin-bottom:12px;">Naskah siap ditugaskan kepada 2 (dua) Mitra Bebestari independen dengan metode Double-Blind Peer Review.</p>
+						<div style="display:flex; gap:10px;">
+							<button class="ojs_btn" style="font-size:12px;" onclick="alert('Reviewer 1 & 2 berhasil ditugaskan.')">+ Tugaskan Reviewer (Assign Reviewer)</button>
+						</div>
+					</div>
+				</div>
+			`,
+			3: `<div class="wf_box"><div class="wf_box_head">Tahap 3: Copyediting</div><div class="wf_box_content" style="color:#64748B;">Menunggu putusan penerimaan naskah pada tahap review.</div></div>`,
+			4: `<div class="wf_box"><div class="wf_box_head">Tahap 4: Production</div><div class="wf_box_content" style="color:#64748B;">Menunggu penyelesaian tahap copyediting.</div></div>`,
+			5: `<div class="wf_box"><div class="wf_box_head">Tahap 5: Publication</div><div class="wf_box_content" style="color:#64748B;">Belum dijadwalkan terbit.</div></div>`
+		};
+
 		function selectWfStage(stageNum, el) {
-			document.getElementById('wfStageContent').innerHTML = stageTemplates[stageNum];
+			if (currentSubmissionId === 2) {
+				document.getElementById('wfStageContent').innerHTML = stageTemplatesSub2[stageNum] || stageTemplatesSub2[1];
+			} else {
+				document.getElementById('wfStageContent').innerHTML = stageTemplates[stageNum];
+			}
 			document.querySelectorAll('.wf_stepper .wf_step').forEach(s => s.classList.remove('active'));
 			if (el) el.classList.add('active');
 		}
