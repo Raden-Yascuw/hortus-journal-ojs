@@ -162,7 +162,7 @@
 		Required fields are marked with an asterisk: <abbr class="required" title="required">*</abbr>
 	</p>
 
-	<form class="cmp_form register" id="register" method="post" action="/register.html">
+	<form class="cmp_form register" id="register" method="post" action="/register.html" onsubmit="return handleRegisterSubmit(event)">
 		<input type="hidden" name="csrfToken" value="010ccc5c80b2e4d1b9613942d0eee347">
 
 		
@@ -720,6 +720,50 @@ Kontak Redaksi: <a href="mailto:yanuar.rizky@hortus.ac.id">yanuar.rizky@hortus.a
 	} catch(e){}
 })();
 </script>
+
+<script>
+function handleRegisterSubmit(e) {
+	e.preventDefault();
+	var given = (document.getElementById('givenName').value || '').trim();
+	var family = (document.getElementById('familyName').value || '').trim();
+	var email = (document.getElementById('email').value || '').trim();
+	var username = (document.getElementById('username').value || '').trim();
+	var p1 = document.getElementById('password').value;
+	var p2 = document.getElementById('password2').value;
+
+	if (p1 !== p2) {
+		alert('Password confirmation does not match. Please verify your passwords.');
+		return false;
+	}
+
+	var fullName = given + (family ? ' ' + family : '');
+	var newAccount = {
+		username: username,
+		name: fullName,
+		role: 'Author / Reader',
+		email: email
+	};
+
+	// Save to localStorage
+	var registeredList = JSON.parse(localStorage.getItem('ojs_registered_users') || '{}');
+	registeredList[username.toLowerCase()] = {
+		account: newAccount,
+		password: p1
+	};
+	localStorage.setItem('ojs_registered_users', JSON.stringify(registeredList));
+
+	// Show confirmation
+	var formEl = document.getElementById('register');
+	formEl.innerHTML = '<div style="background:#F0FDF4; border:1px solid #86EFAC; color:#14532D; padding:20px; border-radius:8px; margin-bottom:20px;">' +
+		'<h3 style="margin-top:0; color:#15803D;">Registration Complete!</h3>' +
+		'<p style="margin:8px 0 16px 0; font-size:14px;">Welcome, <strong>' + fullName + '</strong>. Your account (<code>' + username + '</code>) has been successfully registered.</p>' +
+		'<a href="/login.html" class="ojs_btn" style="display:inline-block; padding:10px 20px; background:#14532D; color:#fff; font-weight:700; border-radius:4px; text-decoration:none;">Proceed to Login</a>' +
+	'</div>';
+
+	return false;
+}
+</script>
+
 </body>
 
 </html>

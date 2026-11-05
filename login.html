@@ -183,6 +183,15 @@ function handleOJSLogin(e) {
 		'author_test': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' },
 		'penulis_1': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' }
 	};
+	
+	// Check user accounts from dynamic registration
+	var dynamicUsers = JSON.parse(localStorage.getItem('ojs_registered_users') || '{}');
+	if (dynamicUsers[u] && dynamicUsers[u].password === p) {
+		localStorage.setItem('ojs_logged_user', JSON.stringify(dynamicUsers[u].account));
+		window.location.href = '/dashboard.html';
+		return false;
+	}
+
 	var errBox = document.getElementById('loginErrorBox');
 	if (accounts[u] && (p === 'Hortus2026!' || p === 'hortus2026!')) {
 		localStorage.setItem('ojs_logged_user', JSON.stringify(accounts[u]));

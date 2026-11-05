@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hortus Journal: Journal of Sustainable Plantation and Agro-Industrial Sciences</title>
+  <link href="https://hortus-journal-ojs-eight.vercel.app/feed/atom.xml" rel="self"/>
+  <link href="https://hortus-journal-ojs-eight.vercel.app/"/>
+  <updated>2026-11-05T00:00:00Z</updated>
+  <id>https://hortus-journal-ojs-eight.vercel.app/</id>
+  <entry>
+    <title>Implementation of IoT-Based Smart Drip Irrigation for Precision Robusta Coffee Cultivation in East Java</title>
+    <link href="https://hortus-journal-ojs-eight.vercel.app/article/1.html"/>
+    <id>https://hortus-journal-ojs-eight.vercel.app/article/1.html</id>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author><name>Bagus Setiawan, S.P., M.Agr.</name></author>
+    <summary>Research on precision smart drip irrigation powered by IoT sensors in coffee plantation.</summary>
+  </entry>
+</feed>
