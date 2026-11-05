@@ -663,7 +663,7 @@
 	<div class="modal_backdrop" id="newSubModal">
 		<div class="modal_card">
 			<div class="modal_head">
-				<span>Submit New Manuscript (Simulasi Artikel Dummy)</span>
+				<span>Submit New Manuscript (OJS 5-Step Submission Wizard — Tahap 1)</span>
 				<span style="cursor:pointer;" onclick="closeNewSubModal()">✕</span>
 			</div>
 			<div class="modal_body">
@@ -750,11 +750,30 @@
 
 		const stageTemplates = {
 			1: `
+				<div class="wf_box" style="border-left:4px solid #16A34A; margin-bottom:16px;">
+					<div class="wf_box_head" style="background:#F0FDF4;">
+						<span><strong>Tahap 1: Submission (Pengajuan Naskah oleh Author)</strong> — 5-Step Submission Wizard</span>
+						<span class="ojs_badge badge_green">Submisi Berhasil Dikirim</span>
+					</div>
+					<div class="wf_box_content" style="font-size:13px; color:#334155;">
+						<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px; margin-bottom:14px; background:#F8FAFC; padding:12px; border-radius:6px; border:1px solid #E2E8F0;">
+							<div><strong>Langkah 1 (Start):</strong><br><span style="color:#16A34A;">✓ Bagian: Smart &amp; Precision Plantation</span><br><span style="color:#16A34A;">✓ 5 Poin Submission Checklist Disetujui</span><br><span style="color:#16A34A;">✓ Lisensi CC BY 4.0 Diterima</span></div>
+							<div><strong>Langkah 2 (Upload):</strong><br><span style="color:#16A34A;">✓ Naskah_Submisi_Awal_Anonim.docx</span><br><span style="font-size:11.5px; color:#64748B;">Article Text • Double-Blind Ready</span></div>
+							<div><strong>Langkah 3 (Metadata):</strong><br><span style="color:#16A34A;">✓ Judul &amp; Abstrak Terstruktur</span><br><span style="font-size:11.5px; color:#64748B;">3 Kontributor: Nayla S., M. Yanuar R., Nirmala D. L.</span></div>
+							<div><strong>Langkah 4 &amp; 5 (Finish):</strong><br><span style="color:#16A34A;">✓ Konfirmasi Pengajuan Final</span><br><span style="font-size:11.5px; color:#64748B;">ID Submisi: #1 • Status: Submitted</span></div>
+						</div>
+						<div class="file_row">
+							<span>📄 <strong>Naskah_Submisi_Awal_Anonim_Hortus_Journal.docx</strong> (Article Text - Blind Manuscript)</span>
+							<span>Nov 5, 2026 • <a href="/pdf/Galley_Final_HJ_Vol1_No1_2026.pdf" target="_blank">Download Naskah Awal</a></span>
+						</div>
+					</div>
+				</div>
+
 				<div class="wf_box">
-					<div class="wf_box_head"><span>Submission Files (Stage 1: Initial Screening)</span><span class="ojs_badge badge_green">Passed Plagiarism Check (11%)</span></div>
+					<div class="wf_box_head"><span>Initial Desk Screening &amp; Pre-Review Discussions</span><span class="ojs_badge badge_green">Passed Plagiarism Check (Turnitin 11%)</span></div>
 					<div class="wf_box_content">
-						<div class="file_row"><span>📄 <strong>1-1-Manuscript_Initial_Submission.pdf</strong> (Article Text)</span><span>Nov 5, 2026 • <a href="/pdf/Galley_Final_HJ_Vol1_No1_2026.pdf" target="_blank">Download</a></span></div>
-						<p style="margin-top:10px; color:#334155;"><strong>Desk Evaluation Note (Lidya Amalia Rahmania, S.Kom, M.Kom):</strong> Naskah sesuai dengan Focus &amp; Scope Hortus Journal, indeks kemiripan Turnitin 11% (&le;20%), diteruskan ke Section Editor (Nirmala Dwi Lestari) untuk Double-Blind Peer Review.</p>
+						<p style="color:#334155; line-height:1.6;"><strong>Hasil Pemeriksaan Awal Redaksi:</strong> Naskah lolos seleksi kelayakan administratif dan substantif awal (Focus &amp; Scope perkebunan presisi, indeks Turnitin 11% dari batas maksimal 20%). Dilanjutkan ke Tahap 2 (Review) oleh Section Editor (Nirmala Dwi Lestari).</p>
+						<div style="margin-top:10px; font-size:12px; color:#64748B;">Partisipan Submisi: <strong>Nayla Syukurillah</strong> (Author) • <strong>Mohammad Yanuar Rizky</strong> (Managing Editor) • <strong>Lidya Amalia Rahmania</strong> (Editor-in-Chief) • <strong>Nirmala Dwi Lestari</strong> (Section Editor)</div>
 					</div>
 				</div>
 			`,
