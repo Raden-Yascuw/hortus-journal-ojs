@@ -164,14 +164,6 @@
 		
 	
 <div id="loginErrorBox" style="display:none; background:#FEF2F2; border:1px solid #F87171; color:#991B1B; padding:12px 16px; border-radius:6px; margin-bottom:16px; font-size:13.5px; font-weight:600;"></div>
-<div style="background:#F0FDF4; border:1px solid #86EFAC; color:#14532D; padding:12px 16px; border-radius:6px; margin-bottom:18px; font-size:13px;">
-	<strong>Info Akun OJS Hortus Journal (Password semua akun: <code>Hortus2026!</code>):</strong><br>
-	• <code>Admin_jurnal</code> (atau <code>admin_journal</code>) — Mohammad Yanuar Rizky (Journal Manager &amp; Managing Editor)<br>
-	• <code>editor_utama</code> — Lidya Amalia Rahmania, S.Kom, M.Kom (Pemimpin Redaksi)<br>
-	• <code>editor_subjek</code> — Nirmala Dwi Lestari (Section Editor)<br>
-	• <code>layout_edit</code> — Nayla Syukurillah (Layout Editor, Copyeditor &amp; Production Team)<br>
-	• <code>reviewer_01</code> / <code>reviewer_02</code> / <code>author_test</code>
-</div>
 <script>
 function handleOJSLogin(e) {
 	e.preventDefault();
@@ -185,11 +177,11 @@ function handleOJSLogin(e) {
 		'layout_edit': { username: 'layout_edit', name: 'Nayla Syukurillah', role: 'Layout, Copyeditor & Production' },
 		'admin': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Site Administrator & Journal Manager' },
 		'reviewer_01': { username: 'reviewer_01', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
-		'reviewer_01': { username: 'reviewer_01', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
+		'reviewer_1': { username: 'reviewer_01', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
 		'reviewer_02': { username: 'reviewer_02', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
-		'reviewer_02': { username: 'reviewer_02', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
+		'reviewer_2': { username: 'reviewer_02', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
 		'author_test': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' },
-		'author_test': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' }
+		'penulis_1': { username: 'author_test', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' }
 	};
 	var errBox = document.getElementById('loginErrorBox');
 	if (accounts[u] && (p === 'Hortus2026!' || p === 'hortus2026!')) {
@@ -198,7 +190,7 @@ function handleOJSLogin(e) {
 		return false;
 	} else {
 		errBox.style.display = 'block';
-		errBox.innerHTML = 'Username atau Password salah. Gunakan salah satu username di atas (misal: <code>Admin_jurnal</code> atau <code>admin_journal</code>) dan password: <code>Hortus2026!</code>';
+		errBox.textContent = 'Invalid username or password. Please try again.';
 		return false;
 	}
 }
