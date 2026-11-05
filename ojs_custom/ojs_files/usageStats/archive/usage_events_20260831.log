@@ -1,0 +1,7 @@
+::1 administrative 1 "2026-08-31 09:30:35" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+127.0.0.1 - - "2026-08-31 09:30:59" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (X11; Linux x86_64; rv:154.0) Gecko/20100101 Firefox/154.0"
+::1 administrative 1 "2026-08-31 09:36:04" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+192.168.1.54 - - "2026-08-31 09:44:40" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0"
+192.168.1.174 - - "2026-08-31 09:45:39" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+192.168.1.54 administrative 2 "2026-08-31 09:53:35" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0"
+192.168.1.53 - - "2026-08-31 09:57:01" http://localhost/ojs/index.php/Horsju/index 200 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
