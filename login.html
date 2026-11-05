@@ -162,7 +162,45 @@
 		Required fields are marked with an asterisk: <abbr class="required" title="required">*</abbr>
 	</p>
 		
-	<form class="cmp_form cmp_form login" id="login" method="post" action="/login.html/signIn">
+	
+<div id="loginErrorBox" style="display:none; background:#FEF2F2; border:1px solid #F87171; color:#991B1B; padding:12px 16px; border-radius:6px; margin-bottom:16px; font-size:13.5px; font-weight:600;"></div>
+<div style="background:#F0FDF4; border:1px solid #86EFAC; color:#14532D; padding:12px 16px; border-radius:6px; margin-bottom:18px; font-size:13px;">
+	<strong>Info Akun OJS Hortus Journal (Password semua akun: <code>Hortus2026!</code>):</strong><br>
+	• <code>Admin_jurnal</code> (atau <code>admin_journal</code>) — Mohammad Yanuar Rizky (Journal Manager &amp; Managing Editor)<br>
+	• <code>editor_utama</code> — Lidya Amalia Rahmania, S.Kom, M.Kom (Pemimpin Redaksi)<br>
+	• <code>editor_subjek</code> — Nirmala Dwi Lestari (Section Editor)<br>
+	• <code>layout_edit</code> — Nayla Syukurillah (Layout Editor, Copyeditor &amp; Production Team)<br>
+	• <code>reviewer_1</code> / <code>reviewer_2</code> / <code>penulis_1</code>
+</div>
+<script>
+function handleOJSLogin(e) {
+	e.preventDefault();
+	var u = (document.getElementById('username').value || '').trim().toLowerCase();
+	var p = (document.getElementById('password').value || '').trim();
+	var accounts = {
+		'admin_jurnal': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
+		'admin_journal': { username: 'Admin_jurnal', name: 'Mohammad Yanuar Rizky', role: 'Journal Manager & Managing Editor' },
+		'editor_utama': { username: 'editor_utama', name: 'Lidya Amalia Rahmania, S.Kom, M.Kom', role: 'Pemimpin Redaksi' },
+		'editor_subjek': { username: 'editor_subjek', name: 'Nirmala Dwi Lestari', role: 'Section Editor' },
+		'layout_edit': { username: 'layout_edit', name: 'Nayla Syukurillah', role: 'Layout, Copyeditor & Production' },
+		'reviewer_1': { username: 'reviewer_1', name: 'Prof. Dr. Ir. Hendra Kusuma, M.Sc.', role: 'Reviewer A' },
+		'reviewer_2': { username: 'reviewer_2', name: 'Dr. Siti Aminah, S.P., M.Si.', role: 'Reviewer B' },
+		'penulis_1': { username: 'penulis_1', name: 'Bagus Setiawan, S.P., M.Agr.', role: 'Author' }
+	};
+	var errBox = document.getElementById('loginErrorBox');
+	if (accounts[u] && (p === 'Hortus2026!' || p === 'hortus2026!')) {
+		localStorage.setItem('ojs_logged_user', JSON.stringify(accounts[u]));
+		window.location.href = '/dashboard.html';
+		return false;
+	} else {
+		errBox.style.display = 'block';
+		errBox.innerHTML = 'Username atau Password salah. Gunakan salah satu username di atas (misal: <code>Admin_jurnal</code> atau <code>admin_journal</code>) dan password: <code>Hortus2026!</code>';
+		return false;
+	}
+}
+</script>
+
+	<form class="cmp_form cmp_form login" id="login" method="post" action="/dashboard.html" onsubmit="return handleOJSLogin(event)">
 		<input type="hidden" name="csrfToken" value="d7d3b7ba027f2e36e8b22920d21bfa84">
 
 		
@@ -343,5 +381,20 @@ Kontak Redaksi: <a href="mailto:yanuar.rizky@hortus.ac.id">yanuar.rizky@hortus.a
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script><script src="/assets/js/jquery-ui.min.js" type="text/javascript"></script><script src="/assets/js/popper.js" type="text/javascript"></script><script src="/assets/js/util.js" type="text/javascript"></script><script src="/assets/js/dropdown.js" type="text/javascript"></script><script src="/assets/js/main.js" type="text/javascript"></script>
 
 
+
+<script>
+(function(){
+	try {
+		var u = JSON.parse(localStorage.getItem('ojs_logged_user') || 'null');
+		if (u && u.username) {
+			var navUser = document.getElementById('navigationUser');
+			if (navUser) {
+				navUser.innerHTML = '<li class="profile"><a href="/dashboard.html" style="background:#D97706;color:#fff;padding:4px 10px;border-radius:4px;font-weight:700;">Dashboard (' + u.username + ')</a></li><li class="profile"><a href="#" onclick="localStorage.removeItem(\'ojs_logged_user\');location.reload();return false;">Logout</a></li>';
+			}
+		}
+	} catch(e){}
+})();
+</script>
 </body>
+
 </html>

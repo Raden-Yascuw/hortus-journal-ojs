@@ -1,3 +1,17 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/login.html/signIn",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/login/signIn",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/submissions",
+      "destination": "/dashboard.html"
+    }
+  ]
 }
