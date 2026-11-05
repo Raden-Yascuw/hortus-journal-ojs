@@ -879,6 +879,31 @@
 			alert('Sukses: Rekomendasi evaluasi penelaah (Revisions Required) berhasil disimpan dan dikirim ke Editor.');
 		}
 
+		
+		function requestRevisionsStep() {
+			const stepper = document.getElementById('wfStepperContainer');
+			stepper.innerHTML = `
+				<div class="wf_step completed" onclick="selectWfStage(1, this)">1. Submission ✓</div>
+				<div class="wf_step completed" onclick="selectWfStage(2, this)">2. Review (Round 1) ✓</div>
+				<div class="wf_step active" onclick="selectWfStage(3, this)" style="background:#F3E8FF; color:#6B21A8; border:1px solid #A855F7;">3 &amp; 4. Revisions &amp; Copyediting ⏳</div>
+				<div class="wf_step" onclick="selectWfStage(4, this)" style="opacity:0.65;">4. Production (Pending)</div>
+				<div class="wf_step" onclick="selectWfStage(5, this)" style="opacity:0.65;">5. Publication (Pending)</div>
+			`;
+			selectWfStage(3);
+		}
+
+		function sendToProductionStep() {
+			const stepper = document.getElementById('wfStepperContainer');
+			stepper.innerHTML = `
+				<div class="wf_step completed" onclick="selectWfStage(1, this)">1. Submission ✓</div>
+				<div class="wf_step completed" onclick="selectWfStage(2, this)">2. Review (Round 1) ✓</div>
+				<div class="wf_step completed" onclick="selectWfStage(3, this)">3. Copyediting ✓</div>
+				<div class="wf_step active" onclick="selectWfStage(4, this)" style="background:#ECFDF5; color:#065F46; border:1px solid #10B981;">4. Production (Galley Layout Ready) ⏳</div>
+				<div class="wf_step" onclick="selectWfStage(5, this)" style="opacity:0.65;">5. Publication (Live)</div>
+			`;
+			selectWfStage(4);
+		}
+
 		let sub2ReviewAssigned = false;
 
 		function sendToReviewStep() {
@@ -960,7 +985,7 @@
 							<div style="background:#F1F5F9; border-radius:6px; padding:10px; display:flex; justify-content:space-between; align-items:center;">
 								<span style="font-size:12px; color:#475569;">Keputusan Editorial Putaran 1:</span>
 								<div style="display:flex; gap:8px;">
-									<button class="ojs_btn" style="background:#D97706; font-size:12px; padding:5px 12px;" onclick="alert('Keputusan: Request Revisions (Revisions Required). Penulis diberikan tenggat 14 hari untuk perbaikan.')">Minta Revisi Penulis (Request Revisions)</button>
+									<button class="ojs_btn" style="background:#D97706; font-size:12px; padding:5px 12px;" onclick="requestRevisionsStep()">Minta Revisi Penulis (Request Revisions)</button>
 									<button class="ojs_btn" style="background:#15803D; font-size:12px; padding:5px 12px;" onclick="alert('Keputusan: Accept Submission. Naskah diteruskan ke Copyediting.')">Terima Naskah (Accept Submission)</button>
 								</div>
 							</div>
@@ -1006,8 +1031,63 @@
 				</div>
 			`,
 			2: getSub2Stage2Content(),
-			3: `<div class="wf_box"><div class="wf_box_head">Tahap 3: Copyediting</div><div class="wf_box_content" style="color:#64748B;">Menunggu putusan penerimaan naskah pada tahap review.</div></div>`,
-			4: `<div class="wf_box"><div class="wf_box_head">Tahap 4: Production</div><div class="wf_box_content" style="color:#64748B;">Menunggu penyelesaian tahap copyediting.</div></div>`,
+						3: `
+				<div class="wf_box" style="border-left:4px solid #A855F7; margin-bottom:16px;">
+					<div class="wf_box_head" style="background:#FAF5FF;">
+						<span><strong>Tahap 4: Editorial Decision, Author Revisions &amp; Copyediting</strong></span>
+						<span class="ojs_badge badge_purple">Revisi Penulis Diterima</span>
+					</div>
+					<div class="wf_box_content" style="font-size:13px; color:#334155;">
+						<p style="margin-bottom:12px; line-height:1.6;">Section Editor telah menetapkan keputusan <strong>Request Revisions</strong>. Penulis (<strong>Nayla Syukurillah</strong>) telah menindaklanjuti 3 catatan reviewer dan mengunggah berkas revisi.</p>
+						
+						<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:12px; margin-bottom:12px;">
+							<div style="font-weight:700; color:#0F172A; margin-bottom:4px;">Berkas Revisi Penulis (Author Revisions):</div>
+							<div class="file_row" style="margin:0;">
+								<span>📄 <strong>Naskah_Revisi_Author_Terverifikasi_Hortus_Journal.docx</strong></span>
+								<span class="ojs_badge badge_green">✓ Telah Disesuaikan Kalibrasi Sensor &amp; PDR</span>
+							</div>
+						</div>
+
+						<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:12px; margin-bottom:14px;">
+							<div style="font-weight:700; color:#0F172A; margin-bottom:4px;">Berkas Copyedited Final (Penyuntingan Gaya Selingkung &amp; DOI):</div>
+							<div class="file_row" style="margin:0;">
+								<span>✏️ <strong>Naskah_Copyedited_Final_Terverifikasi_HJ.docx</strong></span>
+								<span class="ojs_badge badge_green">✓ Verifikasi Satuan SI &amp; APA 7th Edition Selesai</span>
+							</div>
+						</div>
+
+						<div style="display:flex; justify-content:space-between; align-items:center; background:#F1F5F9; padding:10px 14px; border-radius:6px;">
+							<span style="font-weight:600; color:#1E293B;">Aksi Editor: Naskah disahkan dan siap ke Tahap Produksi / Tata Letak</span>
+							<button class="ojs_btn" style="background:#15803D; font-size:12.5px; padding:6px 16px;" onclick="sendToProductionStep()">✓ Kirim ke Tahap Produksi (Send to Production)</button>
+						</div>
+					</div>
+				</div>
+			`,
+						4: `
+				<div class="wf_box" style="border-left:4px solid #10B981; margin-bottom:16px;">
+					<div class="wf_box_head" style="background:#ECFDF5;">
+						<span><strong>Tahap 5: Production &amp; Publication (Penerbitan Galley PDF)</strong></span>
+						<span class="ojs_badge badge_green">Galley PDF Siap Diterbitkan</span>
+					</div>
+					<div class="wf_box_content" style="font-size:13px; color:#334155;">
+						<p style="margin-bottom:12px; line-height:1.6;">Layout Editor &amp; Production Lead (<strong>Nayla Syukurillah</strong>) telah menata letak artikel final ke template resmi Hortus Journal dan menghasilkan berkas tampilan akhir Galley PDF.</p>
+						
+						<div class="file_row" style="margin-bottom:14px;">
+							<span>📕 <strong>Galley_Final_HJ_Vol1_No1_2026.pdf</strong> (Label Galley: PDF)</span>
+							<span><a href="/pdf/Galley_Final_HJ_Vol1_No1_2026.pdf" target="_blank" class="ojs_btn" style="padding:4px 12px; font-size:12px;">Lihat / Unduh Galley PDF</a></span>
+						</div>
+
+						<div style="background:#F0FDF4; border:1px solid #86EFAC; border-radius:6px; padding:12px; margin-bottom:14px;">
+							<div style="font-weight:700; color:#166534; margin-bottom:4px;">Metadata Terbitan (Issue Assignment):</div>
+							<div>Terbitan: <strong>Vol. 1 No. 1 (2026): Inaugural Edition</strong></div>
+							<div>DOI Naskah: <strong>https://doi.org/10.25091/horsju.v1i1.02</strong></div>
+							<div>Lisensi: <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong></div>
+						</div>
+
+						<button class="ojs_btn" style="background:#15803D; font-size:13px; padding:8px 18px;" onclick="alert('Selamat! Naskah berhasil dijadwalkan dan diterbitkan secara resmi pada Vol. 1 No. 1 (2026).')">★ Jadwalkan &amp; Terbitkan (Schedule for Publication)</button>
+					</div>
+				</div>
+			`,
 			5: `<div class="wf_box"><div class="wf_box_head">Tahap 5: Publication</div><div class="wf_box_content" style="color:#64748B;">Belum dijadwalkan terbit.</div></div>`
 		};
 
