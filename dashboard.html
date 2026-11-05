@@ -859,6 +859,95 @@
 			}
 		}
     
+
+		let sub2ReviewAssigned = false;
+
+		function sendToReviewStep() {
+			const stepper = document.getElementById('wfStepperContainer');
+			stepper.innerHTML = `
+				<div class="wf_step completed" onclick="selectWfStage(1, this)">1. Submission ✓</div>
+				<div class="wf_step active" onclick="selectWfStage(2, this)" style="background:#EFF6FF; color:#1E40AF; border:1px solid #3B82F6;">2. Review (Round 1 - Sedang Berjalan) ⏳</div>
+				<div class="wf_step" onclick="selectWfStage(3, this)" style="opacity:0.65;">3. Copyediting (Pending)</div>
+				<div class="wf_step" onclick="selectWfStage(4, this)" style="opacity:0.65;">4. Production (Pending)</div>
+				<div class="wf_step" onclick="selectWfStage(5, this)" style="opacity:0.65;">5. Publication (Pending)</div>
+			`;
+			selectWfStage(2);
+		}
+
+		function assignReviewersStep() {
+			sub2ReviewAssigned = true;
+			selectWfStage(2);
+		}
+
+		function getSub2Stage2Content() {
+			if (!sub2ReviewAssigned) {
+				return `
+					<div class="wf_box" style="border-left:4px solid #3B82F6; margin-bottom:16px;">
+						<div class="wf_box_head" style="background:#EFF6FF;">
+							<span><strong>Tahap 2: Peer Review (External Round 1) — Penugasan Reviewer</strong></span>
+							<span class="ojs_badge badge_blue">Aksi Editor: Send to Review Disetujui</span>
+						</div>
+						<div class="wf_box_content" style="font-size:13px; color:#334155;">
+							<p style="margin-bottom:12px; line-height:1.6;">Naskah telah dialihkan dari Tahap 1 ke Tahap 2 oleh Managing Editor (<strong>Mohammad Yanuar Rizky</strong>). Selanjutnya, Editor/Section Editor menugaskan 2 (dua) orang Mitra Bebestari independen dengan metode penelaahan <strong>Double-Blind (Anonymous Reviewer / Anonymous Author)</strong>.</p>
+							<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:12px; margin-bottom:14px;">
+								<div style="font-weight:700; color:#0F172A; margin-bottom:4px;">Berkas yang Ditautkan untuk Review (Review Files):</div>
+								<div class="file_row" style="margin:0;">
+									<span>📄 <strong>Naskah_Submisi_Awal_Dummy_2_Hortus_Journal.docx</strong> (Article Text - Blind Manuscript)</span>
+									<span class="ojs_badge badge_green">Anonim / Bebas Identitas Penulis</span>
+								</div>
+							</div>
+							<button class="ojs_btn" style="background:#2563EB; font-size:13px; padding:7px 16px;" onclick="assignReviewersStep()">+ Tugaskan Mitra Bebestari (Assign Reviewers)</button>
+						</div>
+					</div>
+				`;
+			} else {
+				return `
+					<div class="wf_box" style="border-left:4px solid #16A34A; margin-bottom:16px;">
+						<div class="wf_box_head" style="background:#F0FDF4;">
+							<span><strong>Tahap 2: Reviewers Panel (2 Mitra Bebestari Ditugaskan)</strong></span>
+							<span class="ojs_badge badge_green">Double-Blind Review Active</span>
+						</div>
+						<div class="wf_box_content" style="font-size:13px; color:#334155;">
+							<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+								<span style="font-weight:700; color:#0F172A;">Daftar Penelaah Sejawat (Mitra Bebestari):</span>
+								<span style="font-size:12px; color:#64748B;">Metode: Double-Blind • Batas Waktu: 4 Minggu</span>
+							</div>
+
+							<div style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; padding:12px; margin-bottom:10px;">
+								<div style="display:flex; justify-content:space-between; align-items:flex-start;">
+									<div>
+										<strong style="color:#0F172A; font-size:13.5px;">🔍 Reviewer 1 (Prof. Dr. Ir. Hendra Kusuma, M.Sc.)</strong>
+										<div style="font-size:12px; color:#64748B; margin-top:2px;">Afiliasi: Universitas Brawijaya / Komisi Ahli Perkebunan • Email: hendra.kusuma@hortus.ac.id</div>
+										<div style="font-size:12px; color:#1E293B; margin-top:4px;">Formulir Evaluasi: <em>Formulir Evaluasi Substantif &amp; Metodologis Hortus Journal (7 Indikator)</em></div>
+									</div>
+									<span class="ojs_badge badge_amber">Review in Progress</span>
+								</div>
+							</div>
+
+							<div style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; padding:12px; margin-bottom:14px;">
+								<div style="display:flex; justify-content:space-between; align-items:flex-start;">
+									<div>
+										<strong style="color:#0F172A; font-size:13.5px;">🔍 Reviewer 2 (Dr. Siti Aminah, S.P., M.Si.)</strong>
+										<div style="font-size:12px; color:#64748B; margin-top:2px;">Afiliasi: Balai Penelitian Tanaman Industri • Email: siti.aminah@hortus.ac.id</div>
+										<div style="font-size:12px; color:#1E293B; margin-top:4px;">Formulir Evaluasi: <em>Formulir Evaluasi Substantif &amp; Metodologis Hortus Journal (7 Indikator)</em></div>
+									</div>
+									<span class="ojs_badge badge_amber">Review in Progress</span>
+								</div>
+							</div>
+
+							<div style="background:#F1F5F9; border-radius:6px; padding:10px; display:flex; justify-content:space-between; align-items:center;">
+								<span style="font-size:12px; color:#475569;">Keputusan Editorial Putaran 1:</span>
+								<div style="display:flex; gap:8px;">
+									<button class="ojs_btn" style="background:#D97706; font-size:12px; padding:5px 12px;" onclick="alert('Keputusan: Request Revisions (Revisions Required). Penulis diberikan tenggat 14 hari untuk perbaikan.')">Minta Revisi Penulis (Request Revisions)</button>
+									<button class="ojs_btn" style="background:#15803D; font-size:12px; padding:5px 12px;" onclick="alert('Keputusan: Accept Submission. Naskah diteruskan ke Copyediting.')">Terima Naskah (Accept Submission)</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				`;
+			}
+		}
+
 		const stageTemplatesSub2 = {
 			1: `
 				<div class="wf_box" style="border-left:4px solid #F59E0B; margin-bottom:16px;">
@@ -880,7 +969,7 @@
 						</div>
 						<div style="margin-top:14px; display:flex; gap:10px; align-items:center;">
 							<span style="font-size:12px; font-weight:700; color:#475569;">Aksi Tindakan Editorial:</span>
-							<button class="ojs_btn" style="background:#15803D; font-size:12px; padding:6px 14px;" onclick="alert('Aksi Editorial: Naskah dikirim ke Tahap 2 (External Double-Blind Review). Status diperbarui.')">✓ Kirim ke Tahap Review (Send to Review)</button>
+							<button class="ojs_btn" style="background:#15803D; font-size:12px; padding:6px 14px;" onclick="sendToReviewStep()">✓ Kirim ke Tahap Review (Send to Review)</button>
 							<button class="ojs_btn ojs_btn_secondary" style="font-size:12px; padding:6px 14px;" onclick="alert('Permintaan revisi format diajukan kepada penulis.')">Minta Revisi Awal (Decline/Revise)</button>
 						</div>
 					</div>
@@ -894,17 +983,7 @@
 					</div>
 				</div>
 			`,
-			2: `
-				<div class="wf_box" style="border-left:4px solid #3B82F6;">
-					<div class="wf_box_head" style="background:#EFF6FF;"><span>Tahap 2: Peer Review (External Round 1)</span><span class="ojs_badge badge_blue">Siap Penugasan Reviewer</span></div>
-					<div class="wf_box_content">
-						<p style="color:#334155; margin-bottom:12px;">Naskah siap ditugaskan kepada 2 (dua) Mitra Bebestari independen dengan metode Double-Blind Peer Review.</p>
-						<div style="display:flex; gap:10px;">
-							<button class="ojs_btn" style="font-size:12px;" onclick="alert('Reviewer 1 & 2 berhasil ditugaskan.')">+ Tugaskan Reviewer (Assign Reviewer)</button>
-						</div>
-					</div>
-				</div>
-			`,
+			2: getSub2Stage2Content(),
 			3: `<div class="wf_box"><div class="wf_box_head">Tahap 3: Copyediting</div><div class="wf_box_content" style="color:#64748B;">Menunggu putusan penerimaan naskah pada tahap review.</div></div>`,
 			4: `<div class="wf_box"><div class="wf_box_head">Tahap 4: Production</div><div class="wf_box_content" style="color:#64748B;">Menunggu penyelesaian tahap copyediting.</div></div>`,
 			5: `<div class="wf_box"><div class="wf_box_head">Tahap 5: Publication</div><div class="wf_box_content" style="color:#64748B;">Belum dijadwalkan terbit.</div></div>`
@@ -912,7 +991,7 @@
 
 		function selectWfStage(stageNum, el) {
 			if (currentSubmissionId === 2) {
-				document.getElementById('wfStageContent').innerHTML = stageTemplatesSub2[stageNum] || stageTemplatesSub2[1];
+				document.getElementById('wfStageContent').innerHTML = (stageNum === 2 ? getSub2Stage2Content() : (stageTemplatesSub2[stageNum] || stageTemplatesSub2[1]));
 			} else {
 				document.getElementById('wfStageContent').innerHTML = stageTemplates[stageNum];
 			}
