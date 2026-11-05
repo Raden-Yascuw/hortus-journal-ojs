@@ -1,7 +1,3 @@
 {
-  "version": 2,
-  "public": true,
-  "buildCommand": null,
-  "outputDirectory": "public_site",
   "cleanUrls": true
 }
