@@ -390,6 +390,7 @@
 				<span class="fa fa-cog"></span> Settings
 			</div>
 			<div class="ojs_nav_item ojs_nav_sub" onclick="showPanel('panel_settings', this)">• Journal &amp; Policies</div>
+			<div class="ojs_nav_item ojs_nav_sub" onclick="showPanel('panel_distribution', this)">• Distribution (License)</div>
 			<div class="ojs_nav_item ojs_nav_sub" onclick="showPanel('panel_review_forms', this)">• Review Forms</div>
 			<div class="ojs_nav_item" onclick="showPanel('panel_users', this)">
 				<span class="fa fa-users"></span> Users &amp; Roles
@@ -545,6 +546,68 @@
 						<li><strong>Section Editors:</strong> Nirmala Dwi Lestari</li>
 						<li><strong>Layout Editor, Copyeditor &amp; Production Team:</strong> Nayla Syukurillah</li>
 					</ul>
+				</div>
+			</section>
+
+			
+			<!-- PANEL 4B: DISTRIBUTION SETTINGS (LICENSE & RIGHTS RETENTION) -->
+			<section id="panel_distribution" style="display:none;">
+				<div class="ojs_page_header">
+					<h1 class="ojs_page_title">Distribution Settings</h1>
+				</div>
+				<div class="ojs_card">
+					<div class="ojs_tabs">
+						<div class="ojs_tab active">License</div>
+						<div class="ojs_tab">Search Indexing</div>
+						<div class="ojs_tab">Payments (Zero APC)</div>
+						<div class="ojs_tab">Access</div>
+						<div class="ojs_tab">Archiving (PKP PN / LOCKSS)</div>
+					</div>
+					<div style="padding:22px; font-size:13.5px; color:#222;">
+						<fieldset style="border:1px solid #BBB; border-radius:3px; padding:10px 16px 12px; margin-bottom:14px;">
+							<legend style="font-weight:700; padding:0 6px;">Copyright Holder</legend>
+							<div style="margin:4px 0;"><label><input type="radio" name="ch" checked> Author</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="ch"> Journal</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="ch"> Custom copyright statement</label></div>
+						</fieldset>
+
+						<fieldset style="border:1px solid #BBB; border-radius:3px; padding:10px 16px 12px; margin-bottom:14px;">
+							<legend style="font-weight:700; padding:0 6px;">License</legend>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> CC Attribution-NonCommercial-NoDerivatives 4.0</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> CC Attribution-NonCommercial 4.0</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> CC Attribution-NonCommercial-ShareAlike 4.0</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> CC Attribution-NoDerivatives 4.0</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic" checked> <strong>CC Attribution 4.0</strong></label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> CC Attribution-ShareAlike 4.0</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="lic"> Other license URL <input type="text" style="border:1px solid #BBB; padding:3px 8px; width:180px; margin-left:6px;" readonly></label></div>
+						</fieldset>
+
+						<fieldset style="border:1px solid #BBB; border-radius:3px; padding:10px 16px 12px; margin-bottom:14px;">
+							<legend style="font-weight:700; padding:0 6px;">Copyright Year</legend>
+							<p style="font-size:12.5px; color:#444; margin-bottom:8px;">Choose how a default copyright date is selected for an article. This default can be overridden on a case-by-case basis. If you "publish as you go", don't use the issue's publication date.</p>
+							<div style="margin:4px 0;"><label><input type="radio" name="cy"> Use the issue's publication date</label></div>
+							<div style="margin:4px 0;"><label><input type="radio" name="cy" checked> Use the article's publication date</label></div>
+						</fieldset>
+
+						<div style="font-weight:700; margin-bottom:6px;">License Terms</div>
+						<div style="border:1px solid #BBB; border-radius:3px; overflow:hidden; margin-bottom:14px;">
+							<div style="background:#F8FAFC; border-bottom:1px solid #BBB; padding:6px 12px; font-weight:700; font-size:13px; display:flex; gap:14px;">
+								<span>B</span> <span><i>I</i></span> <span>x²</span> <span>x₂</span> <span>|</span> <span>🔗</span> <span>|</span> <span>❝</span> <span>☰</span>
+							</div>
+							<div style="padding:12px 14px; font-size:13px; line-height:1.55;">
+								<p style="margin-bottom:6px;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color:#006798;">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.</p>
+								<p style="margin-bottom:6px;"><strong>1. Retensi Hak Cipta (Rights Retention):</strong> Penulis yang menerbitkan artikel pada <em>Hortus Journal: Journal of Sustainable Plantation and Agro-Industrial Sciences</em> tetap memegang hak cipta penuh (100% <em>copyright ownership</em>) dan hak moral atas karyanya tanpa pengalihan hak cipta eksklusif kepada penerbit (Solomon, 2008; Suber, 2012).</p>
+								<p style="margin-bottom:6px;"><strong>2. Izin Publikasi Pertama (License to Publish):</strong> Penulis memberikan izin non-eksklusif kepada <em>Hortus Journal</em> sebagai penerbit pertama (<em>first publication rights</em>) untuk menyunting, memproduksi Galley PDF, mendistribusikan secara daring dalam skema <em>Diamond Open Access (Rp 0 APC)</em>, dan mengindeks artikel pada basis data ilmiah internasional (DOAJ, Crossref, Google Scholar, Dimensions, GARUDA).</p>
+								<p style="margin-bottom:6px;"><strong>3. Lisensi Terbuka (CC BY 4.0):</strong> Setiap artikel diterbitkan di bawah lisensi <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> yang mengizinkan siapa saja membaca, mengunduh, menyalin, mendistribusikan, dan mengadaptasi karya untuk tujuan apa pun (termasuk komersial) dengan wajib mencantumkan atribusi penulis asli dan DOI artikel.</p>
+								<p style="margin:0;"><strong>4. Pengarsipan Mandiri (Self-Archiving):</strong> Penulis diizinkan mengarsipkan versi <em>Preprint</em>, <em>Postprint (Accepted Manuscript)</em>, maupun <em>Version of Record (VoR / Publisher's PDF)</em> ke dalam Repositori Institusi atau repositori subjek segera saat terbit (<strong>Zero Embargo</strong>).</p>
+							</div>
+						</div>
+
+						<div style="display:flex; justify-content:flex-end; align-items:center; gap:12px;">
+							<span style="color:#16A34A; font-weight:700; font-size:13px;">✓ Saved</span>
+							<button class="ojs_btn" style="background:#006798; border-color:#006798;" onclick="alert('Pengaturan Lisensi CC BY 4.0 & Rights Retention berhasil disimpan.')">Save</button>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -817,7 +880,7 @@
 		}
 
 		function showPanel(panelId, navEl) {
-			['panel_submissions','panel_workflow','panel_issues','panel_settings','panel_review_forms','panel_users'].forEach(id => {
+			['panel_submissions','panel_workflow','panel_issues','panel_settings','panel_distribution','panel_review_forms','panel_users'].forEach(id => {
 				document.getElementById(id).style.display = (id === panelId) ? 'block' : 'none';
 			});
 			document.querySelectorAll('.ojs_sidebar .ojs_nav_item').forEach(el => el.classList.remove('active'));
@@ -1232,6 +1295,12 @@
 
 		renderSubmissions();
 		selectWfStage(5);
+		try {
+			const params = new URLSearchParams(window.location.search);
+			if (params.get('panel') === 'distribution' || window.location.pathname.includes('distribution')) {
+				showPanel('panel_distribution');
+			}
+		} catch(e){}
 	</script>
 </body>
 </html>

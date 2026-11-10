@@ -12,6 +12,22 @@
     {
       "source": "/submissions",
       "destination": "/dashboard.html"
+    },
+    {
+      "source": "/management/settings/distribution",
+      "destination": "/dashboard.html?panel=distribution"
+    },
+    {
+      "source": "/index.php/Horsju/management/settings/distribution",
+      "destination": "/dashboard.html?panel=distribution"
+    },
+    {
+      "source": "/index.php/Horsju/about/submissions",
+      "destination": "/about/submissions.html"
+    },
+    {
+      "source": "/index.php/Horsju",
+      "destination": "/index.html"
     }
   ]
 }
