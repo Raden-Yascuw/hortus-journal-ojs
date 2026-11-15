@@ -3,15 +3,87 @@
   <channel>
     <title>Hortus Journal: Journal of Sustainable Plantation and Agro-Industrial Sciences</title>
     <link>https://hortus-journal-ojs-eight.vercel.app/</link>
-    <description>Official RSS Feed for Hortus Journal</description>
+    <description>Official RSS Feed for Hortus Journal - Vol. 1 No. 1 (2026): Inaugural Edition: Precision Plantation, Biotechnology &amp; Circular Agro-Industry</description>
     <atom:link href="https://hortus-journal-ojs-eight.vercel.app/feed/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Implementation of IoT-Based Smart Drip Irrigation for Precision Robusta Coffee Cultivation in East Java</title>
+      <title>Integrasi Sensor IoT Kanopi dan Citra Multispektral UAV untuk Estimasi Presisi Produktivitas Kelapa Sawit (Elaeis guineensis Jacq.) Berkelanjutan</title>
       <link>https://hortus-journal-ojs-eight.vercel.app/article/1.html</link>
-      <description>Research on precision smart drip irrigation powered by IoT sensors in coffee plantation.</description>
-      <author>bagus.setiawan@hortus.ac.id (Bagus Setiawan, S.P., M.Agr.)</author>
+      <description>Ketidakpastian iklim mikro dan heterogenitas nutrisi tanah gambut maupun mineral menjadi tantangan utama dalam menjaga stabilitas produksi Tandan Buah Segar (TBS) kelapa sawit (Elaeis guineensis Jacq.) di Indonesia. Penelitian ini bertujuan mengembangkan model estimasi produktivitas presisi berbasis integrasi jaringan sensor Internet of Things (IoT) iklim mikro kanopi dan citra multispektral Unmanned Aerial Vehicle (UAV). Eksperimen dilaksanakan pada blok kebun umur tanaman menghasilkan (TM-12) seluas 120 hektare selama dua musim panen. Indeks vegetasi Normalized Difference Vegetation Index (NDVI) dan Normalized Difference Red Edge (NDRE) diekstraksi dari wahana UAV dan dikombinasikan dengan parameter kelembapan tanah, suhu kanopi, serta radiasi aktif fotosintetik (PAR) menggunakan algoritma Random Forest Regressor. Evaluasi menggunakan 10-fold spatial cross-validation membuktikan bahwa fusi fitur multispektral NDRE dan sensor IoT menghasilkan akurasi prediksi R² = 0,89 dan Root Mean Square Error (RMSE) = 1,42 ton/ha/tahun (p &lt; 0,001), mengungguli model satelit tunggal sebesar 18,4%. Kerangka kerja ini direkomendasikan bagi pengelola kebun dan pekebun swadaya dalam mengoptimalkan pemupukan presisi berorientasi keberlanjutan ISPO/RSPO.</description>
+      <author>nayla.syukurillah@hortus.ac.id (Nayla Syukurillah, Mohammad Yanuar Rizky, Nirmala Dwi Lestari)</author>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
       <guid>https://hortus-journal-ojs-eight.vercel.app/article/1.html</guid>
+    </item>
+    <item>
+      <title>Sistem Deteksi Dini Cekaman Kekeringan dan Manajemen Irigasi Tetes Cerdas Berbasis LoRa-IoT pada Perkebunan Kopi Robusta (Coffea canephora)</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/2.html</link>
+      <description>Defisit air musiman selama fase pembungaan dan pengisian buah sering menurunkan hasil kopi Robusta (Coffea canephora) hingga 32% pada lahan kering di Jawa Timur. Riset ini merancang dan menguji sistem aktuasi irigasi tetes otomatis berbasis telemetri Long Range (LoRa-IoT) 915 MHz yang terintegrasi dengan indeks Crop Water Stress Index (CWSI). Percobaan lapangan rancangan acak kelompok dilaksanakan selama enam bulan pada kebun kopi produktif seluas 8 hektare dengan membandingkan kontrol irigasi terjadwal konvensional dan tiga ambang batas potensial matriks tanah (−25 kPa, −40 kPa, dan −55 kPa). Hasil menunjukkan ambang aktuasi −40 kPa menghemat konsumsi air irigasi sebesar 37,4% (p &lt; 0,001) sekaligus meningkatkan bobot kering biji HS sebesar 21,8% (2,14 ton/ha vs 1,76 ton/ha pada kontrol), dengan keandalan pengiriman paket LoRa mencapai 98,6% pada jarak 2,4 km di bawah kanopi naungan.</description>
+      <author>yanuar.rizky@hortus.ac.id (Mohammad Yanuar Rizky, Bagus Setiawan, Nirmala Dwi Lestari)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/2.html</guid>
+    </item>
+    <item>
+      <title>Respons Fisiologis dan Akumulasi Prolin Klon Unggul Kakao (Theobroma cacao L.) terhadap Cekaman Salinitas dan Genangan Periodik di Lahan Pasang Surut</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/3.html</link>
+      <description>Intrusi air laut dan genangan pasang surut menghambat ekspansi budidaya kakao (Theobroma cacao L.) di lahan sub-optimal pesisir Sumatera. Studi ini mengevaluasi ketahanan fisiologis dan biokimia empat klon kakao unggul (MCC 02, Sulawesi 1, Scavina 6, dan TSH 858) terhadap kombinasi cekaman salinitas NaCl (0, 50, 100 mM) dan durasi genangan (0, 7, 14 hari) menggunakan rancangan petak terbagi faktorial. Parameter kandungan prolin bebas, malondialdehid (MDA), klorofil SPAD, serta rasio Na⁺/K⁺ daun diukur secara spektrofotometrik dan flame photometry. Klon MCC 02 menunjukkan toleransi tertinggi dengan peningkatan akumulasi prolin sebesar 3,8 kali lipat (42,6 μmol/g bobot segar), mempertahankan rasio Na⁺/K⁺ terendah (0,41), serta menekan kerusakan membran MDA di bawah 18,2 nmol/g pada perlakuan 100 mM NaCl + genangan 14 hari (p &lt; 0,01).</description>
+      <author>ratna.kusumawati@brin.go.id (Ratna Kusumawati, Nirmala Dwi Lestari, Sudarmono Sudarmono)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/3.html</guid>
+    </item>
+    <item>
+      <title>Optimization of Biochar-Enriched Organic Ameliorants on Peat Soil Nutrient Retention and Oil Palm (Elaeis guineensis) Seedling Vigour</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/4.html</link>
+      <description>Acidic tropical peat soils suffer from severe phosphorus (P) and potassium (K) leaching, resulting in high fertilizer losses during the main-nursery stage of oil palm (Elaeis guineensis Jacq.). This study optimized empty fruit bunch (EFB)-derived biochar enriched with humic compost at ratios of 0%, 5%, 10%, and 15% (w/w) in a 9-month main-nursery experiment across Riau and Selangor peat substrates. Amending sapric peat with 10% EFB-biochar increased soil pH from 3.72 to 5.18, elevated effective cation exchange capacity (ECEC) by 46.2%, and reduced nitrate and K⁺ leaching losses by 38.9% compared to unamended NPK controls (p &lt; 0.001). Consequently, Dickson Quality Index (DQI) of Tenera seedlings improved by 34.5%, establishing an environmentally sound nursery fertilization protocol for sustainable peatland management.</description>
+      <author>akamal.noor@upm.edu.my (Ahmad Kamal Mohd. Noor, Nayla Syukurillah, Arif Budiman)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/4.html</guid>
+    </item>
+    <item>
+      <title>Efikasi Konsorsium Trichoderma asperellum dan Burkholderia cepacia sebagai Agens Pengendali Hayati Penyakit Busuk Pangkal Batang (Ganoderma boninense) pada Kelapa Sawit</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/5.html</link>
+      <description>Penyakit Busuk Pangkal Batang (BPB) yang disebabkan oleh Ganoderma boninense menjadi ancaman utama pada perkebunan kelapa sawit peremajaan generasi kedua dan ketiga di Sumatera Utara dengan tingkat kematian tanaman mencapai 45%. Penelitian ini menguji sinergisme konsorsium Trichoderma asperellum isolat T-As12 dan bakteri endofit Burkholderia cepacia Bc-09 dalam menghambat koloni patogen secara in-vitro serta menekan insidensi penyakit di pembibitan dan kebun. Uji biakan ganda menunjukkan daya hambat radial konsorsium mencapai 84,6%, melampaui aplikasi tunggal T. asperellum (71,2%) maupun fungisida sintetik heksakonazol (68,4%). Pada pengamatan kebun selama 18 bulan di Asahan, inokulasi konsorsium menekan keparahan penyakit BPB hingga 64,2% (p &lt; 0,001) disertai peningkatan aktivitas enzim pertahanan peroksidase dan kitinase sebesar 2,4 kali lipat.</description>
+      <author>hendra.wijaya@iopri.org (Hendra Wijaya, Nirmala Dwi Lestari, Siti Aminah)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/5.html</guid>
+    </item>
+    <item>
+      <title>Dinamika Populasi Penggerek Buah Kopi (Hypothenemus hampei) dan Peran Musuh Alami Parasitoid pada Sistem Agroforestri Kopi Arabika Dataran Tinggi</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/6.html</link>
+      <description>Penggerek Buah Kopi (PBKo, Hypothenemus hampei) dapat merusak hingga 40% panen kopi Arabika (Coffea arabica L.) jika tidak dikendalikan secara ekologis. Penelitian ini menganalisis dinamika populasi H. hampei dan tingkat parasitisasi alami oleh parasitoid Cephalonomia stephanoderis pada tiga tipe naungan di dataran tinggi Ijen-Raung: monokultur terbuka (&lt;15% naungan), naungan tunggal lamtoro (35–45%), dan agroforestri multi-strata (50–65% dengan alpukat, dadap, dan pinus). Pengamatan terhadap 18.000 buah kopi sepanjang tahun 2025 membuktikan bahwa sistem agroforestri multi-strata menekan tingkat serangan PBKo menjadi 6,8% dibandingkan 24,5% pada monokultur terbuka (p &lt; 0,001), dengan laju parasitisasi alami C. stephanoderis mencapai 28,4% dan insidensi cendawan entomopatogen Beauveria bassiana alami sebesar 19,2%.</description>
+      <author>didik.haryono@iccri.net (Didik Haryono, Rina Kartikasari, Mohammad Yanuar Rizky)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/6.html</guid>
+    </item>
+    <item>
+      <title>Pirolisis Terkontrol Tandan Kosong Kelapa Sawit dan Kulit Buah Kakao menjadi Bio-Oil dan Karbon Aktif Berpori untuk Remediasi Limbah Cair Pabrik Kelapa Sawit (POME)</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/7.html</link>
+      <description>Limbah padat tandan kosong kelapa sawit (TKKS) dan kulit buah kakao (KBK) berpotensi dikonversi menjadi produk bernilai tambah tinggi dalam konsep agroindustri sirkular. Penelitian ini mengevaluasi ko-pirolisis TKKS dan KBK (rasio 70:30) pada variasi suhu 450 °C, 550 °C, dan 650 °C dalam reaktor unggun tetap beratmosfer N₂ untuk menghasilkan bio-oil dan biochar, yang selanjutnya diaktivasi menggunakan KOH (1:3) menjadi karbon aktif mesopori untuk remediasi Palm Oil Mill Effluent (POME). Rendemen bio-oil maksimum tercapai pada suhu 550 °C (41,8% berat) dengan nilai kalor 24,6 MJ/kg, sedangkan karbon aktif asal 650 °C memiliki luas permukaan BET 912 m²/g. Aplikasi adsorben karbon aktif dosis 4 g/L mampu menurunkan Chemical Oxygen Demand (COD) POME sebesar 82,4% dan kekeruhan sebesar 91,7% mengikuti model isoterm Freundlich (R² = 0,97).</description>
+      <author>fajar.pratama@its.ac.id (Fajar Pratama, Nayla Syukurillah, Dewi Anggraini)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/7.html</guid>
+    </item>
+    <item>
+      <title>Controlled Fermentation Kinetics Using Indigenous Lactobacillus plantarum and Saccharomyces cerevisiae to Enhance Flavor Precursors of Fine Robusta and Liberica Beans</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/8.html</link>
+      <description>Spontaneous mucilage fermentation in Robusta (Coffea canephora) and Liberica (Coffea liberica) processing frequently yields inconsistent sensory quality and excessive bitter-phenolic notes. This study investigated controlled co-inoculation kinetics using indigenous starter cultures of Lactobacillus plantarum (10⁷ CFU/mL) and Saccharomyces cerevisiae (10⁶ CFU/mL) over 36, 48, and 60 hours at 28 °C in anaerobic bioreactors. Sugar consumption, organic acid accumulation (HPLC), and volatile ester generation (HS-SPME-GC-MS) were correlated with Q-Grader sensory evaluations. Co-inoculation for 48 hours accelerated mucilage pectin degradation by 35%, increased fruity ethyl-acetate and isoamyl-acetate esters by 2.6-fold, and elevated SCA/CQI fine cupping scores from 78.25 (spontaneous control) to 84.75 for Fine Robusta and 85.10 for Liberica (p &lt; 0,001).</description>
+      <author>maria.sanchez-cortes@cirad.fr (Maria Sanchez-Cortes, Bagus Setiawan, Nayla Syukurillah)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/8.html</guid>
+    </item>
+    <item>
+      <title>Analisis Kesenjangan Kepatuhan dan Model Insentif Pembiayaan Hijau dalam Akselerasi Sertifikasi ISPO-RSPO bagi Pekebun Swadaya Kelapa Sawit</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/9.html</link>
+      <description>Mandatori sertifikasi Indonesian Sustainable Palm Oil (ISPO) bagi pekebun swadaya sering terhambat tingginya biaya audit awal, ketidaklengkapan legalitas lahan (STDB), dan lemahnya sistem pencatatan kebun. Studi kasus ini memetakan kesenjangan kepatuhan pada 240 pekebun swadaya di Siak dan Kotawaringin Barat serta merancang model skema pembiayaan hijau terpadu (blended green finance) berbasis koperasi. Analisis regresi logistik biner membuktikan bahwa legalitas Surat Tanda Daftar Budidaya (STDB) dan pendampingan koperasi berpengaruh paling signifikan terhadap kesiapan audit ISPO-RSPO (OR = 4,82; p &lt; 0,001). Simulasi finansial menunjukkan insentif premium harga TBS bersertifikat (+Rp 125/kg) dan kredit karbon agroforestri mampu menutup biaya sertifikasi dalam 1,7 tahun dengan peningkatan pendapatan bersih pekebun sebesar 19,6%.</description>
+      <author>yanuar.rizky@hortus.ac.id (Mohammad Yanuar Rizky, Lestari Wulandari, Lidya Amalia Rahmania)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/9.html</guid>
+    </item>
+    <item>
+      <title>Ketelusuran Rantai Pasok Karet Alam Berkelanjutan Berbasis Blockchain Ringan dan Penilaian Siklus Hidup (Life Cycle Assessment) pada Agroindustri Karet Rakyat</title>
+      <link>https://hortus-journal-ojs-eight.vercel.app/article/10.html</link>
+      <description>Rantai pasok bahan olah karet (bokar) rakyat di Indonesia melibatkan banyak perantara sehingga menyulitkan verifikasi asal-usul bebas deforestasi (EUDR) serta audit jejak karbon produk SIR-20. Studi ini mengembangkan arsitektur buku besar terdistribusi (blockchain ringan berizin berbasis Hyperledger Fabric) yang dihubungkan dengan kode QR lot bokar di Unit Pengolahan dan Pemasaran Bokar (UPPB), sekaligus melaksanakan Life Cycle Assessment (LCA) cradle-to-gate untuk 1 ton produk karet remah kering. Hasil LCA menunjukkan total emisi gas rumah kaca sebesar 1.184 kg CO₂-eq/ton SIR-20, dengan kontributor terbesar berasal dari konsumsi energi termal pengeringan dan listrik pabrik (52,4%) serta pemupukan kebun (29,1%). Penerapan sistem blockchain ringan memangkas waktu verifikasi ketelusuran audit dari 14 hari menjadi &lt; 5 detik per lot dengan integritas data 100%.</description>
+      <author>nirmala.lestari@hortus.ac.id (Nirmala Dwi Lestari, Bambang Supriyadi, Mohammad Yanuar Rizky)</author>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0700</pubDate>
+      <guid>https://hortus-journal-ojs-eight.vercel.app/article/10.html</guid>
     </item>
   </channel>
 </rss>
